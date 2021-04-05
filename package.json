@@ -1,6 +1,7 @@
 {
   "name": "atlas",
   "private": true,
+  "version": "1.0.0",
   "scripts": {
     "build": "gridsome build",
     "dev": "gridsome develop",

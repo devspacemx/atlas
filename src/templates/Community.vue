@@ -17,7 +17,6 @@
           <span>{{ $page.post.timeToRead }} min read</span>
         </div>
       </div>
-      <Community class="mt-5" :content="$page.post.content" />
     </div>
   </Layout>
 </template>
@@ -26,7 +25,6 @@
 query Community ($path: String!) {
   post: community (path: $path) {
     title
-    author
     date
     timeToRead
     content
@@ -36,12 +34,8 @@ query Community ($path: String!) {
 </page-query>
 
 <script>
-import Community from "@/components/CommunityContent";
-
 export default {
-  components: {
-    Community,
-  },
+  components: {},
   metaInfo() {
     return {
       title: this.$page.post.title,
@@ -51,22 +45,4 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.meta {
-  display: flex;
-}
-
-.box {
-  display: flex;
-  flex-direction: column;
-  padding: 0 20px 0 0;
-
-  .label {
-    font-weight: bold;
-  }
-}
-
-.blogImage {
-  max-height: 400px;
-  width: 100%;
-}
 </style>

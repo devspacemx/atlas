@@ -39,6 +39,7 @@ $grid-gutter-width: 2rem !default;
 //-----------------------------------------------*/
 
 $white: #fff !default;
+$semi-white: #f3f3f3 !default;
 $gray-100: #f6f6f6 !default;
 $gray-200: #f8f8f8 !default;
 $gray-300: #bec3d0 !default;
@@ -169,7 +170,7 @@ $border-width: 1px !default;
 //
 // Quickly modify global styling by enabling or disabling optional features.
 
-$enable-shadows: false !default;
+$enable-shadows: true !default;
 $enable-gradients: false !default;
 $enable-negative-margins: true !default;
 
