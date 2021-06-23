@@ -1,7 +1,8 @@
 module.exports = {
   siteName: "Atlas de comunidades",
   siteDescription: "Atlas de comunidades tech en Latinoamérica",
-  siteUrl: "https://atlas.devspace.mx",
+  siteUrl: "https://devspacemx.github.io/atlas/",
+  pathPrefix: "/atlas",
   plugins: [
     {
       use: "@gridsome/source-filesystem",
