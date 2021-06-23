@@ -6,8 +6,16 @@ module.exports = {
     {
       use: "@gridsome/source-filesystem",
       options: {
-        path: "comunidades/**/*.md",
+        path: "content/comunidades/*.md",
         typeName: "Community",
+        route: "/comunidades/:slug",
+        refs: {
+          tags: {
+            typeName: "Tag",
+            route: "/tags/:id",
+            create: true,
+          },
+        },
         resolveAbsolutePaths: true,
         remark: {
           externalLinksTarget: "_blank",
