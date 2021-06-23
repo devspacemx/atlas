@@ -1,5 +1,37 @@
-// 
-// 
+//
+//
 // user.scss
 //
 // Place your own theme CSS or SCSS rules below this line, these rules will override any Bootstrap and theme variables.
+.tagcloud {
+  a {
+    text-transform: uppercase;
+    display: inline-block;
+    padding: 4px 10px;
+    margin-bottom: 7px;
+    margin-right: 4px;
+    border-radius: 4px;
+    color: #72789a;
+    border: 1px solid lighten(#72789a, 20%);
+    font-size: 11px;
+    &:hover {
+      border: 1px solid $primary;
+      color: $primary;
+    }
+  }
+}
+.sidebar-box {
+  margin-bottom: 40px;
+  font-size: 15px;
+  width: 100%;
+
+  background: $white;
+  *:last-child {
+    margin-bottom: 0;
+  }
+  h3 {
+    font-weight: 600;
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+}

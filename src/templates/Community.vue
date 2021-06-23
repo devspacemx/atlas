@@ -1,20 +1,52 @@
 <template>
   <Layout>
-    <g-image immediate class="blogImage mb-4" :src="$page.post.image" />
-    <div class="community">
-      <h1 v-html="$page.post.title" class="mb-4" />
-      <div class="meta">
-        <div class="box author">
-          <span class="label">Author</span>
-          <span class="author-name" v-text="$page.post.author" />
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8">
+          <p>
+            <g-image immediate class="mb-1" width="200" :src="$page.post.image" />
+          </p>
+      <h1 v-html="$page.post.title" class="mb-2"/>
+      <CommunityContent :content="$page.post.content"/>
         </div>
-        <div class="box date">
-          <span class="label">Date</span>
-          <div v-text="new Date($page.post.date).toLocaleDateString()" />
-        </div>
-        <div class="box time">
-          <span class="label">Time</span>
-          <span>{{ $page.post.timeToRead }} min read</span>
+        <!-- .col-md-8 -->
+        <div class="col-lg-4 sidebar pl-lg-5">
+          <div class="sidebar-box">
+            <form action="#" class="search-form">
+              <div class="form-group">
+                <span class="fa fa-search"></span>
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Type a keyword and hit enter"
+                />
+              </div>
+            </form>
+          </div>
+          <div class="sidebar-box">
+            <h3>Tags</h3>
+            <div class="tagcloud">
+        <g-link
+          to="/"
+          v-for="item in $page.post.tags"
+          :key="item"
+        >
+        {{item}}
+        </g-link>
+            </div>
+          </div>
+          <div class="sidebar-box">
+            <h3>Sobre esta comunidad</h3>
+            <p>
+              {{$page.post.description}}
+            </p>
+          </div>
+          <div class="sidebar-box">
+            <h3>Redes</h3>
+            <p>
+              Twitter: {{$page.post.twitter}}
+            </p>
+          </div>
         </div>
       </div>
     </div>
@@ -26,16 +58,26 @@ query Community ($path: String!) {
   post: community (path: $path) {
     title
     date
-    timeToRead
     content
-    image
+    image (width: 300, quality: 90)
+    description
+    tags
+    twitter
+    facebook
+    instagram
+    github
+    web
   }
 }
 </page-query>
 
 <script>
+import CommunityContent from '../components/CommunityContent.vue'
+
 export default {
-  components: {},
+  components: {
+    CommunityContent
+  },
   metaInfo() {
     return {
       title: this.$page.post.title,
@@ -44,5 +86,4 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped>
-</style>
+<style lang="scss" scoped></style>
