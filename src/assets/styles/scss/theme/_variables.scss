@@ -39,36 +39,35 @@ $grid-gutter-width: 2rem !default;
 //-----------------------------------------------*/
 
 $white: #fff !default;
-$semi-white: #f3f3f3 !default;
-$gray-100: #f6f6f6 !default;
-$gray-200: #f8f8f8 !default;
+$gray-100:#F6F6F6  !default;
+$gray-200: #F8F8F8 !default;
 $gray-300: #bec3d0 !default;
-$gray-400: #94a2b3 !default;
+$gray-400: #94A2B3 !default;
 $gray-500: #6f7995 !default;
 $gray-600: #4d5469 !default;
-$gray-700: #94a2b3 !default;
+$gray-700: #94A2B3 !default;
 $gray-800: #4d5969 !default;
-$gray-900: #4f5665 !default;
-$gray-1000: #272d4e !default;
+$gray-900: #4F5665 !default;
+$gray-1000: #272D4E !default;
 $gray-1100: #0b1727 !default;
 $black: #000 !default;
 
 $grays: () !default;
 $grays: map-merge(
   (
-    "black": $black,
-    "100": $gray-100,
-    "200": $gray-200,
-    "300": $gray-300,
-    "400": $gray-400,
-    "500": $gray-500,
-    "600": $gray-600,
-    "700": $gray-700,
-    "800": $gray-800,
-    "900": $gray-900,
-    "1000": $gray-1000,
-    "1100": $gray-1100,
-    "white": $white,
+    'black': $black,
+    '100': $gray-100,
+    '200': $gray-200,
+    '300': $gray-300,
+    '400': $gray-400,
+    '500': $gray-500,
+    '600': $gray-600,
+    '700': $gray-700,
+    '800': $gray-800,
+    '900': $gray-900,
+    '1000': $gray-1000,
+    '1100': $gray-1100,
+    'white': $white,
   ),
   $grays
 );
@@ -76,16 +75,16 @@ $grays: map-merge(
 //*-----------------------------------------------
 //|   Solid Colors
 //-----------------------------------------------*/
-$blue: #5f37ef !default;
+$blue: #5F37EF !default;
 $indigo: #727cf5 !default;
-$purple: #7854f7 !default;
-$pink: #f5387b !default;
-$red: #ef4358 !default;
-$orange: #f56538 !default;
-$yellow: #ffba49 !default;
-$green: #70c217 !default;
-$teal: #299ef3 !default;
-$cyan: #38b0f5 !default;
+$purple: #7854F7 !default;
+$pink: #F5387B !default;
+$red: #EF4358 !default;
+$orange: #F56538 !default;
+$yellow: #FFBA49 !default;
+$green: #70C217 !default;
+$teal: #299EF3 !default;
+$cyan: #38B0F5 !default;
 $light: #f9fafd !default;
 
 //*-----------------------------------------------
@@ -103,14 +102,14 @@ $dark: $gray-1100 !default;
 $theme-colors: () !default;
 $theme-colors: map-merge(
   (
-    "primary": $primary,
-    "secondary": $secondary,
-    "success": $success,
-    "info": $info,
-    "warning": $warning,
-    "danger": $danger,
-    "light": $light,
-    "dark": $dark,
+    'primary': $primary,
+    'secondary': $secondary,
+    'success': $success,
+    'info': $info,
+    'warning': $warning,
+    'danger': $danger,
+    'light': $light,
+    'dark': $dark,
   ),
   $theme-colors
 );
@@ -119,14 +118,14 @@ $theme-color-interval: 8% !default;
 $theme-colors-soft: () !default;
 $theme-colors-soft: map-merge(
   (
-    "primary": tint-color($primary, 90),
-    "secondary": tint-color($secondary, 90),
-    "success": tint-color($success, 90),
-    "info": tint-color($info, 90),
-    "warning": tint-color($warning, 90),
-    "danger": tint-color($danger, 90),
-    "light": tint-color($light, 90),
-    "dark": tint-color($dark, 90),
+    'primary': tint-color($primary, 90),
+    'secondary': tint-color($secondary, 90),
+    'success': tint-color($success, 90),
+    'info': tint-color($info, 90),
+    'warning': tint-color($warning, 90),
+    'danger': tint-color($danger, 90),
+    'light': tint-color($light, 90),
+    'dark': tint-color($dark, 90),
   ),
   $theme-colors-soft
 );
@@ -150,12 +149,12 @@ $youtube: #ff0000 !default;
 $brand-colors: () !default;
 $brand-colors: map-merge(
   (
-    "facebook": $facebook,
-    "google-plus": $google-plus,
-    "twitter": $twitter,
-    "linkedin": $linkedin,
-    "youtube": $youtube,
-    "github": $github,
+    'facebook': $facebook,
+    'google-plus': $google-plus,
+    'twitter': $twitter,
+    'linkedin': $linkedin,
+    'youtube': $youtube,
+    'github': $github,
   ),
   $brand-colors
 );
@@ -170,7 +169,7 @@ $border-width: 1px !default;
 //
 // Quickly modify global styling by enabling or disabling optional features.
 
-$enable-shadows: true !default;
+$enable-shadows: false !default;
 $enable-gradients: false !default;
 $enable-negative-margins: true !default;
 
@@ -178,9 +177,8 @@ $enable-negative-margins: true !default;
 //|   Shadow
 //-----------------------------------------------*/
 
-$box-shadow: 0 0.4375rem 0.875rem 0 rgba(65, 69, 88, 0.1),
-  0 3px 6px 0 rgba(0, 0, 0, 0.07) !default;
-$box-shadow-sm: 0 1.5625rem 2.8125rem rgba($gray-500, 0.075) !default;
+$box-shadow: 0 .4375rem .875rem 0 rgba(65, 69, 88, 0.1), 0 3px 6px 0 rgba(0, 0, 0, 0.07) !default;
+$box-shadow-sm: 0 1.5625rem 2.8125rem rgba($gray-500, .075) !default;
 $box-shadow-lg: 0 1rem 4rem rgba($black, 0.175) !default;
 
 //*-----------------------------------------------
@@ -203,7 +201,7 @@ $spacers: map-merge(
     8: $spacer * 7.5,
     9: $spacer * 10,
     10: $spacer * 12.5,
-    11: $spacer * 15,
+    11: $spacer * 15
   ),
   $spacers
 );
@@ -229,14 +227,14 @@ $border-radius-lg: 0.625rem !default;
 //*-----------------------------------------------
 //|   Fonts Families
 //-----------------------------------------------*/
-$font-family-sans-serif: "Poppins", -apple-system, BlinkMacSystemFont,
-  "Segoe UI", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji",
-  "Segoe UI Emoji", "Segoe UI Symbol" !default;
-$font-family-monospace: "SFMono-Regular", Menlo, Monaco, Consolas,
-  "Liberation Mono", "Courier New", monospace !default;
-$font-family-base: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI",
-  "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
-  "Segoe UI Symbol" !default;
+$font-family-sans-serif: 'Circular Std', 'Poppins', -apple-system, BlinkMacSystemFont,
+  'Segoe UI', 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji',
+  'Segoe UI Emoji', 'Segoe UI Symbol' !default;
+$font-family-monospace: 'SFMono-Regular', Menlo, Monaco, Consolas,
+  'Liberation Mono', 'Courier New', monospace !default;
+$font-family-base: 'Circular Std', -apple-system, BlinkMacSystemFont, 'Segoe UI',
+   'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji',
+  'Segoe UI Emoji', 'Segoe UI Symbol' !default;
 
 //*-----------------------------------------------
 //|   Fonts
@@ -246,8 +244,8 @@ $font-size-base: 1rem !default;
 $font-sizes: () !default;
 $font-sizes: map-merge(
   (
-    "-2": 1 / pow($type-scale, 2) * $font-size-base,
-    "-1": 1 / $type-scale * $font-size-base,
+    '-2': 1 / pow($type-scale, 2) * $font-size-base,
+    '-1': 1 / $type-scale * $font-size-base,
     0: $font-size-base,
     1: pow($type-scale, 1) * $font-size-base,
     2: pow($type-scale, 2) * $font-size-base,
@@ -278,7 +276,7 @@ $h2-font-size: map_get($font-sizes, 4) !default;
 $h3-font-size: map_get($font-sizes, 3) !default;
 $h4-font-size: map_get($font-sizes, 2) !default;
 $h5-font-size: map_get($font-sizes, 1) !default;
-$h6-font-size: map_get($font-sizes, "-1") !default;
+$h6-font-size: map_get($font-sizes, '-1') !default;
 
 $headings-font-family: $font-family-sans-serif !default;
 $headings-font-weight: $font-weight-medium !default;
@@ -311,18 +309,20 @@ $text-muted: $gray-500 !default;
 
 $blockquote-font-size: $font-size-lg !default;
 
+
+
 //*-----------------------------------------------
 //|   Buttons and Forms
 //-----------------------------------------------*/
-$input-btn-padding-y: 0.56rem !default;
-$input-btn-padding-x: 0.8rem !default;
+$input-btn-padding-y: .56rem !default;
+$input-btn-padding-x: .80rem !default;
 
-$input-btn-padding-y-sm: 0.25rem !default;
+$input-btn-padding-y-sm: .25rem !default;
 $input-btn-padding-x-sm: 0.5rem !default;
 
-$input-btn-padding-y-lg: 0.8rem !default;
+$input-btn-padding-y-lg: .8rem !default;
 $input-btn-padding-x-lg: 2rem !default;
-$input-btn-font-size-lg: $font-size-base !default;
+$input-btn-font-size-lg:  $font-size-base !default;
 
 $btn-reveal-hover-shadow: 0 0 0 1px rgba(43, 45, 80, 0.1),
   0 2px 5px 0 rgba(43, 45, 80, 0.08), 0 1px 1.5px 0 rgba($black, 0.07),
@@ -332,7 +332,7 @@ $btn-focus-width: 0 !default;
 
 // Allows for customizing button radius independently from global border radius
 $btn-border-radius: 0.313rem !default;
-$btn-border-radius-lg: 0.625rem !default;
+$btn-border-radius-lg: .625rem !default;
 
 //*-----------------------------------------------
 //|   Navigation
@@ -344,7 +344,7 @@ $navbar-light-hover-color: rgba($black, 0.95) !default;
 $navbar-light-active-color: $primary !default;
 $navbar-light-disabled-color: rgba($black, 0.25) !default;
 
-$navbar-dark-color: rgba($white, 0.7) !default;
+$navbar-dark-color: rgba($white, .7) !default;
 $navbar-dark-hover-color: rgba($white, 0.9) !default;
 
 $navbar-padding-y: map_get($spacers, 2) !default;
@@ -354,9 +354,11 @@ $standard-nav-height: 3.5625rem !default;
 
 $navbar-light-toggler-icon-bg: str-replace(
   url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='#{$navbar-light-color}' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M0 6h30M0 14h30M0 22h30'/%3E%3C/svg%3E"),
-  "#",
-  "%23"
+  '#',
+  '%23'
 ) !default;
+
+
 
 // /*-----------------------------------------------
 //|   Navbar Brand
@@ -411,24 +413,27 @@ $hr-opacity: 1 !default;
 //*-----------------------------------------------
 //|   card
 //-----------------------------------------------*/
-$card-border-width: 2px !default;
-$card-border-radius: 0.625rem !default;
+$card-border-width:                 2px !default;
+$card-border-radius:                0.625rem !default;
+
 
 //*-----------------------------------------------
 //|   carousel
 //-----------------------------------------------*/
 $carousel-control-opacity: 0.9 !default;
 $carousel-control-hover-opacity: 0.9 !default;
-$carousel-control-color: $gray-400 !default;
-$carousel-control-icon-width: 2rem !default;
-$carousel-control-width: 15% !default;
-$carousel-control-transition: opacity 0.15s ease !default;
+$carousel-control-color:             $gray-400 !default;
+$carousel-control-icon-width:        2rem !default;
+$carousel-control-width:             15% !default;
+$carousel-control-transition:        opacity .15s ease !default;
 
-$carousel-control-prev-icon-bg: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='#{$carousel-control-color}' class='bi bi-arrow-left' viewBox='0 0 16 16'%3E%3Cpath fill-rule='evenodd' d='M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z'/%3E%3C/svg%3E") !default;
-$carousel-control-next-icon-bg: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='#{$carousel-control-color}' class='bi bi-arrow-right' viewBox='0 0 16 16'%3E%3Cpath fill-rule='evenodd' d='M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z'/%3E%3C/svg%3E") !default;
+
+$carousel-control-prev-icon-bg:      url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='#{$carousel-control-color}' class='bi bi-arrow-left' viewBox='0 0 16 16'%3E%3Cpath fill-rule='evenodd' d='M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z'/%3E%3C/svg%3E") !default;
+$carousel-control-next-icon-bg:      url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='#{$carousel-control-color}' class='bi bi-arrow-right' viewBox='0 0 16 16'%3E%3Cpath fill-rule='evenodd' d='M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z'/%3E%3C/svg%3E") !default;
+
 
 // Links
 //
 // Style anchor elements.
 
-$link-color: $secondary !default;
+$link-color:                              $secondary !default;
