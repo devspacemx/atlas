@@ -9,25 +9,34 @@
         </div>
       </div>
       <div class="row">
-        <g-link
-          :to="item.node.path"
+        <div
           v-for="item in $static.communities.edges"
           :key="item.node.id"
-          class="col-md-4 mb-5 mb-md-0"
+          class="col-md-6 mb-4"
         >
-          <img class="shadow-sm" :src="item.node.image" height="200" fit="contain" />
-          <div class="mt-3 text-center text-md-start">
-            <h4 class="display-6 fs-2 fs-lg-3 fw-bold">
-              {{ item.node.title }}
-            </h4>
-            <p class="mb-0">
-              {{ item.node.description }}
-            </p>
-            <a class="btn btn-link ps-0" href="#" role="button">
-              Ecommerce Wordpress ›</a
-            >
+          <div class="card h-100 shadow px-2 px-lg-3 card-span pt-4">
+            <div class="card-body">
+              <h5 class="fw-bold lh-base fs-1 text-700"></h5>
+              <div class="d-flex align-items-center">
+                <g-image :src="item.node.image" class="me-3 me-md-3" />
+                <div class="my-3">
+                  <p class="mb-0 text-black fw-bold">{{ item.node.title }}</p>
+                  <p class="fw-normal mb-0">
+                    May, 2020 .<span>7 mins read</span>
+                  </p>
+                </div>
+              </div>
+              <div class="d-flex align-items-center mt-4 fs--1">
+                <div class="tagcloud">
+                  <!-- only show 3 tags -->
+                  <g-link to="/" v-for="item in item.node.tags.slice(0, 3)" :key="item">
+                    {{ item }}
+                  </g-link>
+                </div>
+              </div>
+            </div>
           </div>
-        </g-link>
+        </div>
       </div>
     </div>
   </section>
@@ -42,16 +51,12 @@ query Community {
         title
         description
         tags
-        image
+        image (width: 100, quality: 70)
       }
     }
   }
 }
 </static-query>
 
-<style lang="scss" scoped>
-
-</style>
-<script>
-
-</script>
+<style lang="scss" scoped></style>
+<script></script>

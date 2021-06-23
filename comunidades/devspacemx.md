@@ -2,14 +2,14 @@
 title: DevSpace
 date: 2019-04-18 17:00:00 +0000
 description: Comunidad de desarrollo
-tags: ['Programación','Ciencia','Emprendimiento']
+tags: ['Programación','Ciencia','Emprendimiento', 'Jej']
 location: MX
 twitter: devspacemx
 facebook: devspacemexico
 instagram: devspacemx
 github: devspacemx
 image: /uploads/devspace.png
-web: https://devspacem.mx
+web: https://devspace.mx
 ---
 
 ¡Tal vez no lo sepas pero amamos la tecnología y hacer comunidad!
