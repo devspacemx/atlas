@@ -4,12 +4,16 @@
       <div class="container">
         <div class="row align-items-center">
           <div class="col-md-4 offset-md-1 order-md-1 pt-8">
-            <img class="img-fluid" src="../assets/images/hero.png" alt="" />
+            <img
+              class="img-fluid"
+              src="../assets/images/hero.png"
+              alt="Atlas de comunidades"
+            />
           </div>
           <div class="col-md-7 col-lg-6 text-center text-md-start pt-5 pt-md-9">
-            <h1 class="display-2 fw-bold fs-4 fs-md-5 fs-xl-6">
+            <h1 class="display-2 fw-bold fs-xl-4">
               El Atlas de comunidades tech <br />
-              en latinoamerica 🌎
+              en Latinoamérica 🌎
             </h1>
             <p class="mt-3 mb-4">
               Atlas es una plataforma que busca unificar un directorio de

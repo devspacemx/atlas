@@ -1,8 +1,9 @@
 <template>
   <header>
     <nav
-      class="navbar navbar-expand-lg navbar-light fixed-top py-3"
+      class="navbar navbar-expand-lg navbar-light fixed-top py-3 shadow-transition"
       data-navbar-on-scroll="data-navbar-on-scroll"
+      style="background-image: none; background-color: rgb(255, 255, 255); transition: none 0s ease 0s;"
     >
       <div class="container-fluid">
         <g-link class="navbar-brand" to="/">
@@ -28,15 +29,19 @@
             class="navbar-nav me-auto ms-lg-4 ms-xl-7 border-bottom border-lg-bottom-0 pt-2 pt-lg-0"
           >
             <li class="nav-item">
-              <g-link class="nav-link fw-medium active" to="/">Inicio</g-link>
+              <g-link class="nav-link fw-medium" to="/">Inicio</g-link>
+    <!--           <a class="nav-link fw-medium active" aria-current="page" href="#"
+                >Inicio</a
+              > -->
+            </li>
+            <li class="nav-item">
+              <g-link class="nav-link fw-medium" to="/comunidades">Comunidades</g-link>
             </li>
             <li class="nav-item">
               <g-link class="nav-link fw-medium" to="/mapa">Mapa</g-link>
             </li>
             <li class="nav-item">
-              <g-link class="nav-link fw-medium" to="/acerca-de"
-                >Sobre el Atlas</g-link
-              >
+              <g-link class="nav-link fw-medium" to="/sobre-nosotros">Sobre Atlas</g-link>
             </li>
           </ul>
           <form class="d-flex py-3 py-lg-0">
@@ -45,14 +50,15 @@
               href="#"
               role="button"
               >Redes</a
-            ><a
+            >
+            <a
               class="btn btn-info order-0 me-1"
               href="https://github.com/devspacemx/atlas"
               role="button"
               >Añade una comunidad</a
             >
             <div class="d-flex align-items-center ps-lg-3 order-3">
-              <svg
+              <g-link to="/search"><svg
                 class="bi bi-search"
                 xmlns="http://www.w3.org/2000/svg"
                 width="16"
@@ -63,7 +69,7 @@
                 <path
                   d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"
                 ></path>
-              </svg>
+              </svg></g-link>
             </div>
           </form>
         </div>
@@ -72,7 +78,7 @@
   </header>
 </template>
 
-<style lang="scss">
+<style lang="scss" scoped>
 nav {
   width: 100%;
   padding-top: 1rem;
