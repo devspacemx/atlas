@@ -3,7 +3,7 @@ title: Tomato Valley
 date: 2019-04-18 17:00:00 +0000
 description: Comunidad de emprendimiento de base tecnológica
 tags: ['Emprendimiento', 'Ciencia', 'Tecnología']
-location: MX
+location: México
 twitter: tomatovalley
 facebook: tomatovalley
 instagram: tomatovalley

@@ -1,6 +1,6 @@
 <template>
   <Layout>
-    <div class="container">
+    <div class="container mt-8">
       <div class="row">
         <div class="col-lg-8">
           <p>
@@ -11,18 +11,6 @@
         </div>
         <!-- .col-md-8 -->
         <div class="col-lg-4 sidebar pl-lg-5">
-          <div class="sidebar-box">
-            <form action="#" class="search-form">
-              <div class="form-group">
-                <span class="fa fa-search"></span>
-                <input
-                  type="text"
-                  class="form-control"
-                  placeholder="Type a keyword and hit enter"
-                />
-              </div>
-            </form>
-          </div>
           <div class="sidebar-box">
             <h3>Tags</h3>
             <div class="tagcloud">
