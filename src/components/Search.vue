@@ -94,7 +94,7 @@ export default {
     },
     async performSearch() {
       if (!this.dataAvailable) {
-        const response = await axios.get("/comunidades.json");
+        const response = await axios.get("comunidades.json");
         this.posts = response.data;
       }
       const results = await this.$search(this.query, this.posts, this.options);
