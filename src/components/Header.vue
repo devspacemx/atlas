@@ -29,19 +29,16 @@
             class="navbar-nav me-auto ms-lg-4 ms-xl-7 border-bottom border-lg-bottom-0 pt-2 pt-lg-0"
           >
             <li class="nav-item">
-              <g-link class="nav-link fw-medium" to="/">Inicio</g-link>
-    <!--           <a class="nav-link fw-medium active" aria-current="page" href="#"
-                >Inicio</a
-              > -->
+              <g-link class="nav-link fw-medium" to="/" exact>Inicio</g-link>
             </li>
             <li class="nav-item">
-              <g-link class="nav-link fw-medium" to="/comunidades">Comunidades</g-link>
+              <g-link class="nav-link fw-medium" to="/comunidades" exact>Comunidades</g-link>
             </li>
             <li class="nav-item">
-              <g-link class="nav-link fw-medium" to="/mapa">Mapa</g-link>
+              <g-link class="nav-link fw-medium" to="/" exact>Mapa</g-link>
             </li>
             <li class="nav-item">
-              <g-link class="nav-link fw-medium" to="/sobre-nosotros">Sobre Atlas</g-link>
+              <g-link class="nav-link fw-medium" to="/sobre-nosotros" exact>Sobre Atlas</g-link>
             </li>
           </ul>
           <form class="d-flex py-3 py-lg-0">
@@ -58,18 +55,7 @@
               >Añade una comunidad</a
             >
             <div class="d-flex align-items-center ps-lg-3 order-3">
-              <g-link to="/search"><svg
-                class="bi bi-search"
-                xmlns="http://www.w3.org/2000/svg"
-                width="16"
-                height="16"
-                fill="#272D4E"
-                viewBox="0 0 16 16"
-              >
-                <path
-                  d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"
-                ></path>
-              </svg></g-link>
+      <SearchBar />
             </div>
           </form>
         </div>
@@ -77,6 +63,17 @@
     </nav>
   </header>
 </template>
+
+<script>
+
+import SearchBar from './Search.vue';
+
+export default {
+  components: {
+    SearchBar
+  }
+}
+</script>
 
 <style lang="scss" scoped>
 nav {

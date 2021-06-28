@@ -1,6 +1,6 @@
 ---
 title: Tomato Valley
-date: 2019-04-18 17:00:00 +0000
+date: 2021-06-19
 description: Comunidad de emprendimiento de base tecnológica
 tags: ['Emprendimiento', 'Ciencia', 'Tecnología']
 location: México

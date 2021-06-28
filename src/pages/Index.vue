@@ -39,17 +39,47 @@
         </div>
       </div>
     </section>
-    <Communities />
+    <div class="container">
+      <div class="row flex-center">
+        <div class="col-auto text-center my-4">
+          <h5 class="display-5 fw-bold">
+            Últimas comunidades<br />registradas
+          </h5>
+        </div>
+      </div>
+      <CommunityCards :communities="$page.communities.edges" />
+    </div>
   </Layout>
 </template>
+
+<page-query>
+query Community {
+  communities: allCommunity(sortBy: "date", limit: 6) {
+    edges {
+      node {
+        id
+        path
+        title
+        description
+        location
+        tags {
+          title
+          path
+        }
+        image (width: 100, quality: 70)
+      }
+    }
+  }
+}
+</page-query>
+
 <script>
-import Communities from "../components/Communities";
+import CommunityCards from "../components/CommunityCards";
 export default {
   components: {
-    Communities,
+    CommunityCards,
   },
 };
 </script>
 
-<style lang="scss" scoped>
-</style>
+<style lang="scss" scoped></style>

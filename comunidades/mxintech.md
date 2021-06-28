@@ -1,6 +1,6 @@
 ---
 title: México in Tech
-date: 2021-04-18 17:00:00 +0000
+date: 2021-06-21
 description: Comunidad de profesionales TI en México
 tags: ['Programación', 'Linux', 'Webinars', 'TI']
 location: México

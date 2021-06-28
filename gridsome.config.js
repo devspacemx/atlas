@@ -14,6 +14,12 @@ module.exports = {
           externalLinksTarget: "_blank",
           externalLinksRel: ["nofollow", "noopener", "noreferrer"],
         },
+        refs: {
+          tags: {
+            typeName: "Tag",
+            create: true,
+          },
+        },
       },
     },
     {
@@ -23,6 +29,17 @@ module.exports = {
       },
     },
   ],
+  templates: {
+    Tag: "/tag/:id",
+  },
+  transformers: {
+    remark: {
+      autolinkClassName: "icon icon-link heading-anchor",
+      externalLinksTarget: "_blank",
+      externalLinksRel: ["nofollow", "noopener", "noreferrer"],
+      anchorClassName: "icon icon-link",
+    },
+  },
   css: {
     loaderOptions: {
       scss: {},

@@ -15,11 +15,11 @@
             <h3>Tags</h3>
             <div class="tagcloud">
         <g-link
-          to="/"
+          :to="item.path"
           v-for="item in $page.post.tags"
-          :key="item"
+          :key="item.id"
         >
-        {{item}}
+        {{item.title}}
         </g-link>
             </div>
           </div>
@@ -49,7 +49,10 @@ query Community ($path: String!) {
     content
     image (width: 300, quality: 90)
     description
-    tags
+    tags {
+      title
+      path
+    }
     twitter
     facebook
     instagram
