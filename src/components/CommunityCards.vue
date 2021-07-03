@@ -10,7 +10,7 @@
           <h5 class="fw-bold lh-base fs-1 text-700"></h5>
           <div class="d-flex align-items-center">
             <g-link :to="item.node.path">
-              <g-image :src="item.node.image" class="me-3 me-md-3" />
+              <g-image :src="item.node.image" :alt="`Logo ${item.node.title}`" class="me-3 me-md-3" />
             </g-link>
             <div class="my-3">
               <g-link :to="item.node.path" class="mb-0 text-black fw-bold fs-1 text-truncate d-inline-block">{{ item.node.title }}</g-link>
