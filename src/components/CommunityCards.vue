@@ -2,10 +2,10 @@
   <div class="row">
     <div
       v-for="item in communities"
-      class="col-md-4 col-xs-12 mb-4"
+      class="col-lg-4 col-md-6 col-xs-12 mb-4"
       :key="item.id"
     >
-      <div class="card h-100 shadow px-2 px-lg-3 card-span pt-4">
+      <div class="card h-100 shadow px-2 px-lg-3 card-span">
         <div class="card-body">
           <h5 class="fw-bold lh-base fs-1 text-700"></h5>
           <div class="d-flex align-items-center">
@@ -13,14 +13,17 @@
               <g-image :src="item.node.image" class="me-3 me-md-3" />
             </g-link>
             <div class="my-3">
-              <p class="mb-0 text-black fw-bold">{{ item.node.title }}</p>
+              <p class="mb-0 text-black fw-bold fs-1 text-truncate d-inline-block">{{ item.node.title }}</p>
               <p class="fw-normal mb-0">
-                 <font-awesome :icon="['fas', 'map-marker-alt']"/>
+                <font-awesome :icon="['fas', 'map-marker-alt']" />
                 {{ item.node.location }}
               </p>
             </div>
           </div>
-          <div class="d-flex align-items-center mt-4 fs--1">
+          <div class="fw-bold text-uppercase">Descripción</div>
+          <p class="text-wrap text-body text-truncate text-black">{{item.node.description.slice(0, 80)}}</p>
+          <div class="fw-bold text-uppercase">Tags</div>
+          <div class="d-flex align-items-center mt-1 fs-1">
             <div class="tagcloud">
               <!-- only show 3 tags -->
               <g-link

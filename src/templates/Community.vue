@@ -4,35 +4,48 @@
       <div class="row">
         <div class="col-lg-8">
           <p>
-            <g-image immediate class="mb-1" width="200" :src="$page.post.image" />
+            <g-image
+              immediate
+              class="mb-1"
+              width="200"
+              :src="$page.post.image"
+            />
           </p>
-      <h1 v-html="$page.post.title" class="mb-2"/>
-      <CommunityContent :content="$page.post.content"/>
+          <h1 v-html="$page.post.title" class="mb-2" />
+          <div class="community-content" v-html="$page.post.content" />
         </div>
         <!-- .col-md-8 -->
         <div class="col-lg-4 sidebar pl-lg-5">
           <div class="sidebar-box">
             <h3>Tags</h3>
             <div class="tagcloud">
-        <g-link
-          :to="item.path"
-          v-for="item in $page.post.tags"
-          :key="item.id"
-        >
-        {{item.title}}
-        </g-link>
+              <g-link
+                :to="item.path"
+                v-for="item in $page.post.tags"
+                :key="item.id"
+              >
+                {{ item.title }}
+              </g-link>
             </div>
           </div>
           <div class="sidebar-box">
             <h3>Sobre esta comunidad</h3>
             <p>
-              {{$page.post.description}}
+              {{ $page.post.description }}
             </p>
           </div>
-          <div class="sidebar-box">
+          <div v-if="this.hasSocialMedia" class="sidebar-box">
             <h3>Redes</h3>
-            <p>
-              Twitter: {{$page.post.twitter}}
+            <p v-if="$page.post.twitter !== ''">
+              <a
+                :href="`https://twitter.com/${$page.post.twitter}?ref_src=twsrc%5Etfw`"
+                class="twitter-follow-button"
+                data-size="large"
+                data-lang="es"
+                data-dnt="true"
+                data-show-count="false"
+                >Seguir a @{{ $page.post.twitter }}</a
+              >
             </p>
           </div>
         </div>
@@ -63,18 +76,22 @@ query Community ($path: String!) {
 </page-query>
 
 <script>
-import CommunityContent from '../components/CommunityContent.vue'
-
 export default {
-  components: {
-    CommunityContent
+  components: {},
+  data() {
+    return {
+    hasSocialMedia: true,
+    }
   },
   metaInfo() {
     return {
       title: this.$page.post.title,
     };
   },
-};
-</script>
 
-<style lang="scss" scoped></style>
+  methods: {
+
+  },
+};
+
+<style lang="scss" scoped></style>;

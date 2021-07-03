@@ -31,7 +31,6 @@
       >
         <a
           :href="post.item.path"
-          @mousedown.prevent="searchResultsVisible = true"
           :class="{ 'results-active': index === highlightedIndex }"
         >
           <div class="results-head">
@@ -52,7 +51,7 @@
         class="px-3 py-2"
       >
         <div class="results-description mb-0">
-          No results for <strong>"{{ query }}"</strong>.
+          No se encontaron resultados para <strong>"{{ query }}"</strong>.
         </div>
       </div>
     </div>
@@ -114,9 +113,7 @@ export default {
 .search-bar .form-control:focus,
 .search-bar-results {
   width: 144px;
-  height: 32px;
   color: #000;
-  box-shadow: 0 0 32px 0 rgba(0, 0, 0, 0.08);
   font-weight: 500;
   opacity: 1;
 }
@@ -222,6 +219,6 @@ export default {
   margin-bottom: 0;
   white-space: nowrap;
   overflow: hidden;
-  text-overflow: ellipsis;
+  background-color: #fff;
 }
 </style>

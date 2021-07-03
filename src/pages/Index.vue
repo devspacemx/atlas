@@ -30,7 +30,8 @@
             ><span> o </span
             ><a
               class="btn btn-link ps-1 ps-md-4 ps-lg-1"
-              href="#"
+              :href="linkShare"
+              target="_blank"
               role="button"
             >
               Comparte el atlas con tus amigos</a
@@ -78,6 +79,12 @@ import CommunityCards from "../components/CommunityCards";
 export default {
   components: {
     CommunityCards,
+  },
+  data() {
+    return {
+    linkShare: 'http://twitter.com/share?text=jeje&url=http://atlas.devspace.mx&hashtags=atlascomunidades,atlastech'
+
+    }
   },
 };
 </script>

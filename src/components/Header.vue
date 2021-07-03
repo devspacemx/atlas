@@ -43,15 +43,10 @@
           </ul>
           <form class="d-flex py-3 py-lg-0">
             <a
-              class="btn btn-link text-1000 fw-medium order-1 order-lg-0 me-lg-2"
-              href="#"
-              role="button"
-              >Redes</a
-            >
-            <a
               class="btn btn-info order-0 me-1"
               href="https://github.com/devspacemx/atlas"
               role="button"
+              target="_blank"
               >Añade una comunidad</a
             >
             <div class="d-flex align-items-center ps-lg-3 order-3">
