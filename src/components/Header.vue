@@ -38,7 +38,7 @@
               <g-link class="nav-link fw-medium" to="/" exact>Mapa</g-link>
             </li> -->
             <li class="nav-item">
-              <g-link class="nav-link fw-medium" to="/about" exact>Sobre Atlas</g-link>
+              <g-link class="nav-link fw-medium" to="/sobre-nosotros" exact>Sobre Atlas</g-link>
             </li>
           </ul>
           <form class="d-flex py-3 py-lg-0">
