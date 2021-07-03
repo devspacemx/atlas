@@ -2,6 +2,7 @@
   <Layout>
     <div class="container">
       <h1 class="mt-7">Comunidades con el tag: {{ $page.tag.title }}</h1>
+      <Pager :data="$page.tag.belongsTo.pageInfo"></Pager>
       <CommunityCards :communities="$page.tag.belongsTo.edges" />
     </div>
   </Layout>
@@ -11,8 +12,7 @@
 query Tag ($id: ID!, $page: Int) {
   tag: tag (id: $id) {
     title
-    belongsTo (page: $page, perPage: 30) @paginate {
-      totalCount
+    belongsTo (page: $page, perPage: 15) @paginate {
       pageInfo {
         totalPages
         currentPage
@@ -39,8 +39,8 @@ query Tag ($id: ID!, $page: Int) {
 </page-query>
 
 <script>
-import { Pager } from "gridsome";
 import CommunityCards from "../components/CommunityCards";
+import Pager from "../components/Pager";
 
 export default {
   components: {

@@ -2,6 +2,7 @@
   <Layout>
     <div class="container">
       <h1 class="mt-7">Comunidades</h1>
+      <Pager :data="$page.communities.pageInfo"></Pager>
       <CommunityCards :communities="$page.communities.edges" />
     </div>
   </Layout>
@@ -36,8 +37,8 @@ communities: allCommunity (sortBy: "title", order: ASC, perPage: 18, page: $page
 </page-query>
 
 <script>
-import { Pager } from "gridsome";
 import CommunityCards from "../components/CommunityCards";
+import Pager from "../components/Pager";
 
 export default {
   components: {
@@ -49,28 +50,3 @@ export default {
   },
 };
 </script>
-<style lang="scss" scoped>
-.pager {
-  display: inline-block;
-  width: 100%;
-  text-align: center;
-
-  &__link {
-    color: var(--link-color);
-    text-align: center;
-    text-decoration: none;
-    padding: 0.5rem 1rem;
-
-    &:hover:not(.active) {
-      background-color: var(--bg-content-color);
-      border-radius: 5px;
-      color: var(--link-color);
-    }
-  }
-}
-
-.active {
-  background-color: var(--bg-content-color);
-  border-radius: 5px;
-}
-</style>

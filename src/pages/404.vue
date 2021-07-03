@@ -1,6 +1,6 @@
 <template>
   <Layout>
-    <img class="img-fluid" src="../assets/images/404.png" />
+    <g-image class="img-fluid" src="~/assets/images/404.png" />
   </Layout>
 </template>
 

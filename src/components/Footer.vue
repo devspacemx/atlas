@@ -70,9 +70,9 @@
           </div>
           <div class="col-sm-12 col-md-3 text-center text-md-end">
             <a href="#"
-              ><img
+              ><g-image
                 class="img-fluid"
-                src="../assets/images/logo.png"
+                src="~/assets/images/logo.png"
                 width="40"
                 alt="Logo Atlas"
             /></a>

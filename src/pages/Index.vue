@@ -4,9 +4,9 @@
       <div class="container">
         <div class="row align-items-center">
           <div class="col-md-4 offset-md-1 order-md-1 pt-8">
-            <img
+            <g-image
               class="img-fluid"
-              src="../assets/images/hero.png"
+              src="~/assets/images/hero.png"
               alt="Atlas de comunidades"
             />
           </div>

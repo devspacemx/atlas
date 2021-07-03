@@ -35,3 +35,9 @@
     margin-bottom: 20px;
   }
 }
+
+.shadow {
+  -webkit-box-shadow: 17px 25px 56px -22px #000;
+  -moz-box-shadow: 17px 25px 56px -22px rgba(0, 0, 0, 0.38);
+  box-shadow: 17px 25px 56px -22px #000;
+}
