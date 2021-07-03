@@ -80,10 +80,13 @@ export default {
   components: {
     CommunityCards,
   },
+    metaInfo: {
+    title: "Atlas",
+    titleTemplate: "%s"
+  },
   data() {
     return {
     linkShare: 'http://twitter.com/share?text=jeje&url=http://atlas.devspace.mx&hashtags=atlascomunidades,atlastech'
-
     }
   },
 };
