@@ -6,7 +6,7 @@
           <div class="col-md-4 offset-md-1 order-md-1 pt-8">
             <g-image
               class="img-fluid"
-              src="~/assets/images/hero.png"
+              src="~/assets/images/collab2.png"
               alt="Atlas de comunidades"
             />
           </div>
@@ -18,15 +18,15 @@
             <p class="mt-3 mb-4">
               Atlas es una plataforma que busca unificar un directorio de
               comunidades tecnológicas.<br />
-              Nuestro objetivo es darle una mayor visibilidad a aquellas
-              comunidades que van empezando y tienen mucho que aportar al
-              ecosistema.
+              Reconozcamos la labor que han hecho muchas comunidades en
+              Latinoamérica, creemos sinergía y encontremos grupos con causas en
+              común. Hagamos comunidad
             </p>
-            <a
+            <g-link
               class="btn btn-lg btn-info rounded-pill me-2"
-              href="#"
+              to="/sobre-nosotros#nueva-comunidad"
               role="button"
-              >Agrega un registro</a
+              >Agrega un registro</g-link
             ><span> o </span
             ><a
               class="btn btn-link ps-1 ps-md-4 ps-lg-1"
@@ -80,14 +80,15 @@ export default {
   components: {
     CommunityCards,
   },
-    metaInfo: {
+  metaInfo: {
     title: "Atlas",
-    titleTemplate: "%s"
+    titleTemplate: "%s",
   },
   data() {
     return {
-    linkShare: 'http://twitter.com/share?text=jeje&url=http://atlas.devspace.mx&hashtags=atlascomunidades,atlastech'
-    }
+      linkShare:
+        "http://twitter.com/share?text=jeje&url=http://atlas.devspace.mx&hashtags=atlascomunidades,atlastech",
+    };
   },
 };
 </script>

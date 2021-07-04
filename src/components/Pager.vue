@@ -1,6 +1,8 @@
 <template>
     <Pager :info="data"
        class="pager-container"
+       :showNavigation="showNavigation"
+       :showLinks="showLinks"
        linkClass="pager-container__link"  />
 </template>
 
@@ -10,6 +12,12 @@
 export default {
   components: {
     Pager
+  },
+  data() {
+    return {
+      showNavigation: false,
+      showLinks: true,
+    }
   },
   props: {
     data: Object,
@@ -34,6 +42,6 @@ export default {
   }
 
   .active {
-    color: blueviolet;
+    color: #5F37EF;
   }
 </style>

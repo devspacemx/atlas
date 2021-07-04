@@ -42,12 +42,12 @@
             </li>
           </ul>
           <form class="d-flex py-3 py-lg-0">
-            <a
+            <g-link
               class="btn btn-info order-0 me-1"
-              href="https://github.com/devspacemx/atlas"
+              to="/sobre-nosotros#nueva-comunidad"
               role="button"
               target="_blank"
-              >Añade una comunidad</a
+              >Añade una comunidad</g-link
             >
             <div class="d-flex align-items-center ps-lg-3 order-3">
       <SearchBar />
