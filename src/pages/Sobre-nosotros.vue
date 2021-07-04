@@ -73,6 +73,7 @@
           <div
             class="col-md-12 col-lg-8 text-md-start align-self-center"
             style="max-width: 600px"
+            id="agregar-comunidad"
           >
           <h2 class="fw-bold display-5 mb-3 mt-5 text-center">
             ¿Cómo agrego una comunidad?

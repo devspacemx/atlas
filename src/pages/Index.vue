@@ -24,7 +24,7 @@
             </p>
             <g-link
               class="btn btn-lg btn-info rounded-pill me-2"
-              to="/sobre-nosotros#nueva-comunidad"
+              to="/sobre-nosotros#agregar-comunidad"
               role="button"
               >Agrega un registro</g-link
             ><span> o </span
