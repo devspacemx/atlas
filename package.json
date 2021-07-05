@@ -17,6 +17,7 @@
     "axios": "^0.21.1",
     "bootstrap": "^5.0.2",
     "gridsome": "^0.7.23",
+    "gridsome-plugin-algolia": "^2.1.4",
     "gridsome-source-static-meta": "^1.0.1",
     "lodash": "^4.17.21",
     "lodash.pick": "^4.4.0",

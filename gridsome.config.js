@@ -1,3 +1,30 @@
+const collections = [
+  {
+    query: `{
+      allCommunity {
+        edges {
+          node {
+            id
+            title
+            path
+            description
+          }
+        }
+      }
+    }`,
+    transformer: ({ data }) => data.allCommunity.edges.map(({ node }) => node),
+    indexName: process.env.ALGOLIA_INDEX_NAME || "communities", // Algolia index name
+    itemFormatter: (item) => {
+      return {
+        objectID: item.id,
+        title: item.title,
+        path: item.path,
+        description: item.description,
+      };
+    },
+  },
+];
+
 module.exports = {
   siteName: "Atlas de comunidades",
   siteDescription: "Atlas de comunidades tech en Latinoamérica",
@@ -26,6 +53,16 @@ module.exports = {
       use: "@gridsome/plugin-sitemap",
       options: {
         cacheTime: 600000,
+      },
+    },
+    {
+      use: `gridsome-plugin-algolia`,
+      options: {
+        appId: process.env.ALGOLIA_APP_ID,
+        apiKey: process.env.ALGOLIA_ADMIN_KEY,
+        collections,
+        chunkSize: 10000, // default: 1000
+        enablePartialUpdates: true, // default: false
       },
     },
   ],

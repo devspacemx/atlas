@@ -35,7 +35,7 @@
           </div>
           <div v-if="this.hasSocialMedia" class="sidebar-box">
             <h3>Redes</h3>
-            <p v-if="$page.post.twitter !== ''">
+            <p>
               <a
                 :href="`https://twitter.com/${$page.post.twitter}?ref_src=twsrc%5Etfw`"
                 class="twitter-follow-button"
