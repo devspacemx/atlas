@@ -19,18 +19,17 @@
               Atlas es una plataforma que busca unificar un directorio de
               comunidades tecnológicas.<br />
               Reconozcamos la labor que han hecho muchas comunidades en
-              Latinoamérica, creemos sinergía y encontremos grupos con causas en
-              común. Hagamos comunidad
+              Latinoamérica.<br/> El Atlas lo construimos todos. Hagamos comunidad 👋
             </p>
             <g-link
               class="btn btn-lg btn-info rounded-pill me-2"
-              to="/sobre-nosotros#agregar-comunidad"
+              to="/acerca#nueva-comunidad"
               role="button"
-              >Agrega un registro</g-link
+              >Añade una comunidad</g-link
             ><span> o </span
             ><a
               class="btn btn-link ps-1 ps-md-4 ps-lg-1"
-              :href="linkShare"
+              :href='"https://twitter.com/intent/tweet?text=" + shareText'
               target="_blank"
               role="button"
             >
@@ -86,8 +85,8 @@ export default {
   },
   data() {
     return {
-      linkShare:
-        "http://twitter.com/share?text=jeje&url=http://atlas.devspace.mx&hashtags=atlascomunidades,atlastech",
+      shareText:
+        '🔎 ¿Ya conoces el Atlas tech?%0aEs una plataforma para dar a conocer a todas las comunidades tecnológicas de LATAM 🌎%0a¡Conoce más sobre el proyecto en 👉 https://comunidades.lat',
     };
   },
 };

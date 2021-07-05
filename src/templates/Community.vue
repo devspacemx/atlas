@@ -6,7 +6,7 @@
           <p>
             <g-image
               immediate
-              class="mb-1"
+              class="mb-1 image-fluid mx-auto d-block"
               width="200"
               :src="$page.post.image"
             />
@@ -14,8 +14,7 @@
           <h1 v-html="$page.post.title" class="mb-2" />
           <div class="community-content" v-html="$page.post.content" />
         </div>
-        <!-- .col-md-8 -->
-        <div class="col-lg-4 sidebar pl-lg-5">
+        <div class="col-lg-4 sidebar">
           <div class="sidebar-box">
             <h3>Tags</h3>
             <div class="tagcloud">
