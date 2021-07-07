@@ -31,14 +31,14 @@
               gracias a las necesidades y oportunidades que hay en cada país.
             </p>
             <p class="mt-3 text-dark">
-              Las de software, las de hardware, las de emprendimiento, y más, y
+              Las de software, las de hardware, las de emprendimiento, y
               <b>más...</b>
-              Todas igual de importantes, todas participando activamente en
-              generar conocimiento y experiencias para sus miembros.
+              Todas participando activamente en generar conocimiento y
+              experiencias para sus miembros.
             </p>
           </div>
         </div>
-        <!-- Para quienes -->
+        <!-- Por qué -->
         <div class="row flex-center">
           <div
             class="col-md-12 col-lg-4 mb-4 d-flex align-items-center justify-content-center order-lg-1 order-md-0"
@@ -53,18 +53,18 @@
             class="col-md-12 col-lg-8 text-md-start order-lg-0 order-md-1"
             style="max-width: 460px;"
           >
-            <h2 class="fw-bold display-5 mb-3 mt-3">¿Para quienes?</h2>
+            <h2 class="fw-bold display-5 mb-3 mt-3">¿Por qué?</h2>
             <p class="text-dark">
-              Para las personas, que puedan encontrar comunidades de su interés
-              y hacer nuevas amistades.
+              Para que las personas puedan encontrar comunidades de su interés y
+              hacer nuevas amistades.
             </p>
             <p class="text-dark">
-              Para las comunidades, que puedan encontrar otros grupos con causas
+              Para que las comnunidades puedan encontrar otros grupos con causas
               en común y hacer sinergia.
             </p>
             <p class="text-dark">
-              Para que todos podamos aprender de todos y hagamos el mejor equipo
-              del mundo.
+              Para que todos podamos aprender de todos, cuando las comunidades
+              crecen ¡Todos nos fortalecemos!
             </p>
             <a class="btn btn-lg btn-info rounded-pill" href="#"
               >Comparte con tu red</a
@@ -94,18 +94,25 @@
             </h2>
             <p class="text-dark">
               Agregar una comunidad al Atlas es muy sencillo, por ahora existen
-              2 formas:
+              2 formas 👇
             </p>
             <ul class="text-dark">
               <li>
-                Clonar el
+                💻 Clonar el
                 <a href="https://github.com/devspacemx/atlas" target="_blank"
                   >repositorio de GitHub</a
                 >
                 del Atlas de comunidades y agregar un registro en forma de
-                archivo markdown al registro de comunidades.
+                archivo markdown al registro de comunidades, sigue las
+                instrucciones en el archivo <b>README.md</b> en la raíz del
+                repositorio.<br />Una vez que termines de hacer los cambios,
+                crea un Pull Request y un mantainer del repositorio aprobará los
+                cambios.
               </li>
-              <li>Llenar un formulario de Google Docs</li>
+              <li>
+                📄 Llena este <a href="#" target="_blank">formulario de Google Docs</a> con los datos que se te
+                solicitan.
+              </li>
             </ul>
           </div>
         </div>

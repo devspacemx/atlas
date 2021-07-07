@@ -14,16 +14,16 @@
     "@gridsome/plugin-sitemap": "^0.4.0",
     "@gridsome/source-filesystem": "^0.6.2",
     "@gridsome/transformer-remark": "^0.6.4",
+    "algoliasearch": "^4.10.3",
     "axios": "^0.21.1",
     "bootstrap": "^5.0.2",
     "gridsome": "^0.7.23",
     "gridsome-plugin-algolia": "^2.1.4",
     "gridsome-source-static-meta": "^1.0.1",
-    "lodash": "^4.17.21",
     "lodash.pick": "^4.4.0",
     "mapbox-gl": "^2.3.1",
     "node-sass": "^4.13.0",
     "sass-loader": "^7.0.0",
-    "vue-fuse": "^2.2.1"
+    "vue-instantsearch": "^3.7.0"
   }
 }

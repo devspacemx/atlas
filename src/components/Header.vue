@@ -32,13 +32,17 @@
               <g-link class="nav-link fw-medium" to="/" exact>Inicio</g-link>
             </li>
             <li class="nav-item">
-              <g-link class="nav-link fw-medium" to="/comunidades" exact>Comunidades</g-link>
+              <g-link class="nav-link fw-medium" to="/comunidades" exact
+                >Comunidades</g-link
+              >
             </li>
-<!--             <li class="nav-item">
+            <!--             <li class="nav-item">
               <g-link class="nav-link fw-medium" to="/" exact>Mapa</g-link>
             </li> -->
             <li class="nav-item">
-              <g-link class="nav-link fw-medium" to="/acerca" exact>Sobre Atlas</g-link>
+              <g-link class="nav-link fw-medium" to="/acerca" exact
+                >Sobre Atlas</g-link
+              >
             </li>
           </ul>
           <form class="d-flex py-3 py-lg-0">
@@ -49,7 +53,7 @@
               >Añade una comunidad</g-link
             >
             <div class="d-flex align-items-center ps-lg-3 order-3">
-      <SearchBar />
+                <Search />
             </div>
           </form>
         </div>
@@ -59,12 +63,10 @@
 </template>
 
 <script>
-
-import SearchBar from './Search.vue';
-
+import Search from '../components/Search.vue';
 export default {
   components: {
-    SearchBar
+    Search
   }
 }
 </script>

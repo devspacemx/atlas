@@ -8,6 +8,9 @@ const collections = [
             title
             path
             description
+            image
+            tags
+            location
           }
         }
       }
@@ -20,6 +23,9 @@ const collections = [
         title: item.title,
         path: item.path,
         description: item.description,
+        image: item.image,
+        tags: item.tags,
+        location: item.location,
       };
     },
   },
@@ -62,7 +68,7 @@ module.exports = {
         apiKey: process.env.ALGOLIA_ADMIN_KEY,
         collections,
         chunkSize: 10000, // default: 1000
-        enablePartialUpdates: true, // default: false
+        enablePartialUpdates: false, // default: false
       },
     },
   ],
