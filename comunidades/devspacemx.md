@@ -1,8 +1,8 @@
 ---
 title: DevSpace
 date: 2021-06-20
-description: Comunidad de desarrollo
-tags: [ 'Programación','Ciencia','Emprendimiento' ]
+description: Somos una comunidad de base tecnológica generadora de talento e ideas 💡🚀 Nuestro enfoque es principalmente desarrollo de software pero también le damos la bienvenida a otros temas como diseño, ciencia y emprendimiento. ¡Únete a nosotros! Te recibimos con los brazos abiertos 🤗
+tags: ["Programación", "Ciencia", "Emprendimiento", "Students", "Git", "Webinars", "Hackathones"]
 location: México
 twitter: devspacemx
 facebook: devspacemexico
@@ -11,8 +11,6 @@ github: devspacemx
 image: /uploads/devspace.png
 web: https://devspace.mx
 ---
-
-# Comunidad DevSpace
 
 ¡Tal vez no lo sepas pero amamos la tecnología y hacer comunidad!
 

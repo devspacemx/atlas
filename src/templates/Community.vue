@@ -13,7 +13,10 @@
             />
           </p>
           <h1 v-html="$page.community.title" class="mb-2" />
-          <div class="community-content" v-html="$page.community.content" />
+          <div
+            v-html="$page.community.content"
+            class="text-black"
+          />
         </div>
         <div class="col-lg-4 sidebar">
           <div class="sidebar-box">

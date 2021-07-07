@@ -1,7 +1,7 @@
 ---
 title: Linuxeros Zapopan
 date: 2021-07-07
-description: Comunidad Linux Zapopan
+description: Welcome! We are a Linux users community. We share knowledge about Free Software and Open Source.
 tags: ['Programación', 'Linux', 'Webinars', 'TI']
 location: México
 twitter: lnxzpn
@@ -11,4 +11,6 @@ telegram: lnxzpn
 image: /uploads/linuxeros.png
 ---
 
-Somos una comunidad de profesionales TI en México. Hacemos reuniones y webinars para compartir conocimientos. Mejorando nuestros skills de forma colaborativa.
+Welcome!
+
+We are a Linux users community. We share knowledge about Free Software and Open Source.
