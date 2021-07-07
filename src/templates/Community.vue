@@ -8,11 +8,11 @@
               immediate
               class="mb-1 image-fluid mx-auto d-block"
               width="200"
-              :src="$page.post.image"
+              :src="$page.community.image"
             />
           </p>
-          <h1 v-html="$page.post.title" class="mb-2" />
-          <div class="community-content" v-html="$page.post.content" />
+          <h1 v-html="$page.community.title" class="mb-2" />
+          <div class="community-content" v-html="$page.community.content" />
         </div>
         <div class="col-lg-4 sidebar">
           <div class="sidebar-box">
@@ -20,7 +20,7 @@
             <div class="tagcloud">
               <g-link
                 :to="item.path"
-                v-for="item in $page.post.tags"
+                v-for="item in $page.community.tags"
                 :key="item.id"
               >
                 {{ item.title }}
@@ -30,22 +30,37 @@
           <div class="sidebar-box">
             <h3>Sobre esta comunidad</h3>
             <p>
-              {{ $page.post.description }}
+              {{ $page.community.description }}
             </p>
           </div>
-          <div v-if="this.hasSocialMedia" class="sidebar-box">
-            <h3>Redes</h3>
+          <div class="sidebar-box">
+            <h3>Ubicación</h3>
             <p>
-              <a
-                :href="`https://twitter.com/${$page.post.twitter}?ref_src=twsrc%5Etfw`"
-                class="twitter-follow-button"
-                data-size="large"
-                data-lang="es"
-                data-dnt="true"
-                data-show-count="false"
-                >Seguir a @{{ $page.post.twitter }}</a
+              {{ $page.community.location }}
+            </p>
+          </div>
+          <div class="sidebar-box">
+            <h3>Redes</h3>
+            <p v-for="social in validSocial" v-bind:key="social">
+              <font-awesome-icon
+                :icon="[...icons[social]]"
+                size="lg"
+                fixed-width
+              />
+              <a target="_blank" :href="urls[social] + $page.community[social]">
+                {{ urls[social] + $page.community[social] }}</a
               >
             </p>
+          </div>
+          <div v-if="hasTwitter" class="sidebar-box">
+            <h3>Twitter</h3>
+            <a
+              class="twitter-timeline"
+              data-height="400"
+              data-dnt="true"
+              :href="`https://twitter.com/${$page.community.twitter}`"
+              >Tweets by {{ $page.community.twitter }}</a
+            >
           </div>
         </div>
       </div>
@@ -55,7 +70,7 @@
 
 <page-query>
 query Community ($path: String!) {
-  post: community (path: $path) {
+  community (path: $path) {
     title
     date
     content
@@ -68,29 +83,59 @@ query Community ($path: String!) {
     twitter
     facebook
     instagram
+    telegram
     github
     web
+    location
   }
 }
 </page-query>
 
 <script>
 export default {
-  components: {},
   data() {
     return {
-    hasSocialMedia: true,
-    }
+      socialMedia: [
+        "twitter",
+        "telegram",
+        "facebook",
+        "github",
+        "web",
+        "instagram",
+      ],
+      icons: {
+        twitter: ["fab", "twitter"],
+        telegram: ["fab", "telegram"],
+        facebook: ["fab", "facebook"],
+        github: ["fab", "github"],
+        web: ["fas", "link"],
+        instagram: ["fab", "instagram"],
+      },
+      urls: {
+        twitter: "https://twitter.com/",
+        telegram: "https://t.me/",
+        facebook: "https://facebook.com/",
+        github: "https://github.com/",
+        web: "",
+        instagram: "https://instagram.com/",
+      },
+    };
+  },
+  computed: {
+    hasTwitter: function() {
+      return this.$page.community.twitter !== '';
+    },
+    validSocial: function() {
+      return this.socialMedia.filter(
+        (item) => this.$page.community[item] !== ""
+      );
+    },
   },
   metaInfo() {
     return {
-      title: this.$page.post.title,
+      title: this.$page.community.title,
+      script: [{ src: "https://platform.twitter.com/widgets.js", body: true }],
     };
   },
-
-  methods: {
-
-  },
 };
-
-<style lang="scss" scoped></style>;
+</script>

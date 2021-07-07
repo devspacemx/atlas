@@ -1,6 +1,14 @@
 import { config, library } from "@fortawesome/fontawesome-svg-core";
 import "@fortawesome/fontawesome-svg-core/styles.css";
-import { faAdjust, faMapMarkerAlt } from "@fortawesome/free-solid-svg-icons";
+import {
+  faDiscord,
+  faFacebook,
+  faGithub,
+  faInstagram,
+  faTelegram,
+  faTwitter,
+} from "@fortawesome/free-brands-svg-icons";
+import { faLink, faMapMarkerAlt } from "@fortawesome/free-solid-svg-icons";
 // Adding FontAwesome
 import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 import Vue from "vue";
@@ -10,7 +18,16 @@ import DefaultLayout from "./layouts/Default.vue";
 import checkIfMobile from "./mixins/checkIfMobile";
 
 config.autoAddCss = true;
-library.add(faAdjust, faMapMarkerAlt);
+library.add(
+  faMapMarkerAlt,
+  faLink,
+  faTwitter,
+  faFacebook,
+  faGithub,
+  faTelegram,
+  faDiscord,
+  faInstagram
+);
 
 // Import FontAwesome
 Vue.component("font-awesome-icon", FontAwesomeIcon);

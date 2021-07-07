@@ -23,9 +23,9 @@
             </p>
             <g-link
               class="btn btn-lg btn-info rounded-pill me-2"
-              to="/acerca#nueva-comunidad"
+              to="/comunidades"
               role="button"
-              >Añade una comunidad</g-link
+              >Conoce las comunidades</g-link
             ><span> o </span
             ><a
               class="btn btn-link ps-1 ps-md-4 ps-lg-1"

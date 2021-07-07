@@ -59,7 +59,7 @@
               hacer nuevas amistades.
             </p>
             <p class="text-dark">
-              Para que las comnunidades puedan encontrar otros grupos con causas
+              Para que las comunidades puedan encontrar otros grupos con causas
               en común y hacer sinergia.
             </p>
             <p class="text-dark">
