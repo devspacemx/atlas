@@ -69,6 +69,9 @@ module.exports = {
         enablePartialUpdates: true, // default: false
       },
     },
+    {
+      use: "gridsome-plugin-seo",
+    },
   ],
   templates: {
     Tag: "/tag/:id",

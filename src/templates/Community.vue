@@ -9,6 +9,7 @@
               class="mb-1 image-fluid mx-auto d-block"
               width="200"
               :src="$page.community.image"
+              :alt="`Logotipo ${$page.community.title}`"
             />
           </p>
           <h1 v-html="$page.community.title" class="mb-2" />
@@ -123,7 +124,7 @@ export default {
   },
   computed: {
     hasTwitter: function() {
-      return this.$page.community.twitter !== '';
+      return this.$page.community.twitter !== "";
     },
     validSocial: function() {
       return this.socialMedia.filter(
@@ -132,10 +133,28 @@ export default {
     },
   },
   metaInfo() {
-    return {
+    const image = this.$page.community.image?.src;
+    const imagePath = this.$url(image);
+    return this.$seo({
       title: this.$page.community.title,
+      description: this.$page.community.description,
+      keywords: `atlas,atlas comunidades,atlas tech,...${
+        this.$page.community.tags
+      }`,
+      lang: "es",
+      language: "Spanish",
+      image: imagePath,
+      openGraph: {
+        title: this.$page.community.title,
+        type: "website",
+        image: imagePath,
+      },
+      twitter: {
+        title: this.$page.community.title,
+        type: "summary",
+      },
       script: [{ src: "https://platform.twitter.com/widgets.js", body: true }],
-    };
+    });
   },
 };
 </script>
