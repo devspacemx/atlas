@@ -31,6 +31,7 @@
               class="btn btn-link ps-1 ps-md-4 ps-lg-1"
               :href='"https://twitter.com/intent/tweet?text=" + shareText'
               target="_blank"
+              rel="noreferrer"
               role="button"
             >
               Comparte el atlas con tus amigos</a

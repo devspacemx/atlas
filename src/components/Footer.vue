@@ -12,6 +12,7 @@
                   class="text-decoration-none"
                   href="https://twitter.com/devspacemx"
                   target="_blank"
+                  rel="noreferrer"
                 >
                   <svg
                     class="bi bi-twitter"
@@ -31,6 +32,7 @@
                   class="text-decoration-none"
                   href="https://facebook.com/devspacemexico"
                   target="_blank"
+                  rel="noreferrer"
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -49,6 +51,7 @@
                   class="text-decoration-none"
                   href="https://instagram.com/devspacemx"
                   target="_blank"
+                  rel="noreferrer"
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
