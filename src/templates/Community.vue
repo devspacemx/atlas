@@ -13,10 +13,7 @@
             />
           </p>
           <h1 v-html="$page.community.title" class="mb-2" />
-          <div
-            v-html="$page.community.content"
-            class="text-black"
-          />
+          <div v-html="$page.community.content" class="text-black" />
         </div>
         <div class="col-lg-4 sidebar">
           <div class="sidebar-box">
@@ -51,7 +48,11 @@
                 size="lg"
                 fixed-width
               />
-              <a target="_blank" :href="urls[social] + $page.community[social]">
+              <a
+                target="_blank"
+                rel="noreferrer"
+                :href="urls[social] + $page.community[social]"
+              >
                 {{ urls[social] + $page.community[social] }}</a
               >
             </p>
