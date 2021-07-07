@@ -22,7 +22,7 @@
               Latinoamérica.<br/> El Atlas lo construimos todos. Hagamos comunidad 👋
             </p>
             <g-link
-              class="btn btn-lg btn-info rounded-pill me-2"
+              class="btn btn-md btn-info rounded-pill me-2"
               to="/comunidades"
               role="button"
               >Conoce las comunidades</g-link
