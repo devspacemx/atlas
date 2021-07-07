@@ -152,6 +152,7 @@ export default {
       twitter: {
         title: this.$page.community.title,
         type: "summary",
+        image: imagePath,
       },
       script: [{ src: "https://platform.twitter.com/widgets.js", body: true }],
     });

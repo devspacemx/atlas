@@ -110,7 +110,7 @@
                 cambios.
               </li>
               <li>
-                📄 Llena este <a href="#" target="_blank">formulario de Google Docs</a> con los datos que se te
+                📄 Llena este <a href="https://forms.gle/o4CeeMgSaJbXE7896" target="_blank">formulario de Google Docs</a> con los datos que se te
                 solicitan.
               </li>
             </ul>
