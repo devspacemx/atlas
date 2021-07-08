@@ -19,16 +19,21 @@ Te damos la más cordial bienvenida, aquí puedes conocer todos los detalles det
   - [📖 Índice](#-índice)
   - [Acerca del proyecto](#acerca-del-proyecto)
   - [Requisitos](#requisitos)
-  - [Comienza](#comienza)
+  - [Desarrollo](#desarrollo)
     - [Descarga](#descarga)
     - [Ejecución](#ejecución)
+  - [Agregando una comunidad](#agregando-una-comunidad)
+    - [Estructura de un archivo de comunidad](#estructura-de-un-archivo-de-comunidad)
   - [Contribuye](#contribuye)
   - [Créditos](#créditos)
     - [Core-Team](#core-team)
-    - [Otros contribuidores](#otros-contribuidores)
   - [Licencia](#licencia)
 
 ## Acerca del proyecto
+
+<p align="center">
+<img src="https://github.com/devspacemx/atlas/blob/main/collab.png" width="300" title="Colaborar">
+</p>
 
 Atlas nace con la intención de ser una plataforma que reuna a todas las comunidades tecnológicas que trabajan en la región latinoaméricana, queremos darle mayor visibilidad a aquellas comunidades que van empezando y también ayudar a que las personas puedan encontrar un grupo dónde se reunan intereses en común.
 
@@ -46,7 +51,7 @@ Para poder levantar el proyecto en tu equipo local de desarrollo, es necesario q
 - Git
 - Un navegador web para probar los cambios
 
-## Comienza
+## Desarrollo
 
 ### Descarga
 
@@ -74,13 +79,13 @@ Para poder levantar el proyecto en tu equipo local de desarrollo, es necesario q
 
    Una vez ejecutado el comando ya estarás listo para ejecutar el proyecto de forma local
 
-   > **Nota**: Es posible que equipos que utilizan una arquitectura ARM tengan problemas al momento de instalar las dependencias, esto se debe a que el pre-procesador de estilos sass aún no está porteado completamente para ese tipo de arquitecturas.
+   > **Nota**: Es posible que equipos que utilizan una arquitectura ARM (e.j: Mac con M1) tengan problemas al momento de instalar las dependencias, esto se debe a que el pre-procesador de estilos sass aún no está porteado completamente para ese tipo de arquitecturas.
 
 ### Ejecución
 
 1. **Ejecuta el proyecto**
 
-   Gridsome provee de un comando para levantar un servidor y reiniciar el sitio en cuanto realices cualquier cambio en el código fuente del proyecto, podrás acceder al sitio desde tu navegador visitando la url http://localhost:8080 (por default).
+   Gridsome provee de un comando para levantar un servidor y reiniciar el sitio en cuanto realices cualquier cambio en el código fuente del proyecto, podrás acceder al sitio desde tu navegador visitando la url <http://localhost:8080> (por default).
 
    ```bash
    # si utilizas npm:
@@ -91,26 +96,51 @@ Para poder levantar el proyecto en tu equipo local de desarrollo, es necesario q
 
    > **Observaciones**: Si realizas un cambio en un archivo markdown es necesario que pares la ejecución del comando y vuelvas a correrlo para ver los cambios.
 
+## Agregando una comunidad
+
+Agregar una comunidad es muy sencillo, solo necesitas:
+
+1. Clona el repositorio en tu cuenta de GitHub, encontrarás el botón en la parte superior derecha del repositorio y dice **Fork**
+2. Crea un archivo con formato `.md` con el nombre de la comunidad en la carpeta `comunidades` en la raíz del repositorio, puedes seguir la plantilla llamada `template-comunidades.md` en la raíz del repositorio.
+3. Sube el logotipo en la carpeta de `uploads`
+4. Prueba tus cambios ejecutando los comandos del apartado de [Ejecución](#ejecución)
+5. Crea un Pull Request
+6. Espera a que un mantainer apruebe tus cambios
+
+### Estructura de un archivo de comunidad
+
+```md
+---
+title: Nombre de comunidad
+date: 2021-06-20 <-- SIGUE ESTE FORMATO DE FECHA (YYYY-MM-DD)
+description: Te recomendamos colocar una descripción corta
+tags: ["Coloca", "Tags", "Para", "Identificar", "Tu", "Comunidad"]
+location: Pais
+image: /uploads/logo.png
+# Tags opcionales, te recomendamos colocar por lo menos uno
+twitter: username
+facebook: username
+instagram: username
+github: username
+web: https://web.com
+---
+
+Contenido extra, puede ser formato Markdown y HTML
+```
+
 ## Contribuye
 
-Incluye aquí las formas de contribuir a tu proyecto.
+¿Te gustaría colaborar con el desarollo de Atlas? ¡Adelante! La plataforma es de todos y si tienes una idea que te gustaría fuera implementada puedes abrir un Issue describiendo que cambios te gustaría ver, así como también puedes abrir un Pull Request con modificaciones para la plataforma.
 
-Ejemplo:
+También puedes revisar que issues están abiertos en el [Repositorio](https://github.com/devspacemx/atlas/issues)
 
-Revisa por favor si puedes contribuir primero con los issues solicitados en el apartado de issues del [Repositorio](https://github.com/devspacemx/atlas)
-
-Considera contribuir al proyecto de cualquier forma. Un buen inicio es la documentación o agregando tu username de twitter o github en este documento. Las modificaciones son aceptadas por pull request en el siguiente repositorio. [Repositorio](https://github.com/).
+También puedes agregar comunidades en las cuales participas, solo asegurate de llenar bien los datos de la comunidad :)
 
 ## Créditos
 
 ### Core-Team
 
 - [mxarc](http://twitter.com/mxarc)
-
-### Otros contribuidores
-
-
-`{}` con ❤️ por la comunidad de [DevSpace](https://www.devspace.mx).
 
 ## Licencia
 
