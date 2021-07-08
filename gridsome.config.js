@@ -7,8 +7,6 @@ const collections = [
             id
             title
             path
-            description
-            image
             location
           }
         }
@@ -21,8 +19,6 @@ const collections = [
         objectID: item.id,
         title: item.title,
         path: item.path,
-        description: item.description,
-        image: item.image,
         location: item.location,
       };
     },
