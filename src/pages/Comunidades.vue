@@ -10,7 +10,7 @@
 
 <page-query>
 query Communities($page: Int) {
-communities: allCommunity (sortBy: "date", order: ASC, perPage: 18, page: $page) @paginate {
+communities: allCommunity (sortBy: "date", order: DESC, perPage: 18, page: $page) @paginate {
     totalCount
     pageInfo { 
       totalPages
