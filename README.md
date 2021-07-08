@@ -132,7 +132,7 @@ Contenido extra, puede ser formato Markdown y HTML
 
 ¿Te gustaría colaborar con el desarollo de Atlas? ¡Adelante! La plataforma es de todos y si tienes una idea que te gustaría fuera implementada puedes abrir un Issue describiendo que cambios te gustaría ver, así como también puedes abrir un Pull Request con modificaciones para la plataforma.
 
-También puedes revisar que issues están abiertos en el [Repositorio](https://github.com/devspacemx/atlas/issues)
+Otra forma en la que puedes contribuir es revisar que issues están abiertos en el [Repositorio](https://github.com/devspacemx/atlas/issues)
 
 También puedes agregar comunidades en las cuales participas, solo asegurate de llenar bien los datos de la comunidad :)
 
