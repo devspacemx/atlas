@@ -47,15 +47,15 @@
           </ul>
           <form class="d-flex py-3 py-lg-0">
             <g-link
-              class="btn btn-info order-0 me-1"
+              class="btn btn-info me-1"
               to="/acerca#nueva-comunidad"
               role="button"
               >Añade una comunidad</g-link
             >
-            <div class="d-flex align-items-center ps-lg-3 order-3">
-                <Search />
-            </div>
           </form>
+          <div class="d-flex align-items-center ps-lg-3">
+            <Search />
+          </div>
         </div>
       </div>
     </nav>
@@ -63,12 +63,12 @@
 </template>
 
 <script>
-import Search from '../components/Search.vue';
+import Search from "../components/Search.vue";
 export default {
   components: {
-    Search
-  }
-}
+    Search,
+  },
+};
 </script>
 
 <style lang="scss" scoped>
