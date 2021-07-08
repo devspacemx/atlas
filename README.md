@@ -1,17 +1,17 @@
 <p align="center">
-<img src="https://user-images.githubusercontent.com/4296205/71327446-ccb82980-24c5-11ea-8956-284860bfee1b.png" width="500" title="Logo DevSpace">
+<img src="https://github.com/devspacemx/atlas/blob/main/logo.png" width="500" title="Logo Atlas">
 </p>
 
 [![license](https://img.shields.io/badge/license-MIT-red)](LICENSE.md)
-[![website](https://img.shields.io/badge/website-devspace.mx-blue)](https://devspace.mx/)
+[![website](https://img.shields.io/badge/website-comunidades.lat-blue)](https://comunidades.lat/)
 [![twitter](https://img.shields.io/twitter/follow/devspacemx?label=Twitter&style=flat&logo=twitter)](https://twitter.com/devspacemx)
 [![Discord](https://img.shields.io/discord/635852899066314753?label=Discord&style=flat&logo=discord)](https://discordapp.com/invite/sJ7b9Mr)
 
-# Nombre del proyecto
+# Atlas de comunidades latinoamérica
 
-**tl;dr**: Descripción de tu proyecto, de ser posible mantenlo corto.
+¡Bienvenido internauta! Este es el repositorio oficial de la plataforma Atlas de comunidades
 
-Ejemplo: Bienvenido Luisito al repositorio del proyecto X
+Te damos la más cordial bienvenida, aquí puedes conocer todos los detalles detrás del proyecto Atlas y cómo colaborar para hacer más grande la plataforma.
 
 ## 📖 Índice
 
@@ -32,52 +32,51 @@ Ejemplo: Bienvenido Luisito al repositorio del proyecto X
 
 ## Acerca del proyecto
 
-Este proyecto es una plantilla para crear proyectos en DevSpace. Puedes forkearla y modificarla o simplemente tomar lo que necesites. Modifícala a tu gusto. No es necesario referir a este documento en los créditos. El proyecto cuenta ya con:
+Atlas nace con la intención de ser una plataforma que reuna a todas las comunidades tecnológicas que trabajan en la región latinoaméricana, queremos darle mayor visibilidad a aquellas comunidades que van empezando y también ayudar a que las personas puedan encontrar un grupo dónde se reunan intereses en común.
 
-- [x] README.md
-- [x] Etiquetas estándar en la sección de *issues*.
-- [x] Etiquetas en el about del proyecto.
-- [x] Template para HACKLOG.md
-- [x] Archivo LICENCE con licencia MIT.
+En toda Latinoamérica podemos encontrar distintas comunidades, ya
+sean de tecnologías en general O muy específicas, todas nacen
+gracias a las necesidades y oportunidades que hay en cada país.
 
 ## Requisitos
 
-Añade aquí una lista de requerimientos para poder levantar el proyecto en el caso de que sea uno de desarrollo (Recuerda que los repos pueden tener proyectos no exclusivamente de código).
+Para poder levantar el proyecto en tu equipo local de desarrollo, es necesario que tengas instalado lo siguiente:
 
-Ejemplo:
-
-- Editor de código
-- Node.JS
-- Git y Gitkraken
-- Un navegador web
+- Editor de código (vim, VS Code, Webstorm, Atom, etc...)
+- Node.js
+- npm o yarn
+- Git
+- Un navegador web para probar los cambios
 
 ## Comienza
 
 ### Descarga
 
-1. **Escribe aquí el primer paso.**
+1. **Clona el repositorio**
 
-    Descripción breve del primer segundo.
-
-   ```bash
-   npm install -g ejemplo
-   mv .example.env .env
-   ```
-
-    ¿Qué sucede con este paso?
-
-> **Nota**: Información adicional de este paso.
-
-1. **Segunda instrucción.**
-
-    Descripción breve del primer segundo.
+   Para poder realizar cambios y conservar el historial de git, es necesario que clones el repositorio en tu equipo de desarrollo local.
 
    ```bash
-   comando
-   otro comando
+   git clone https://github.com/devspacemx/atlas.git
+   cd atlas
    ```
 
-    ¿Qué sucede con este paso?
+   Este comando habrá descargado una copia local, ahora estarás listo para realizar cambios
+
+2. **Instala las dependencias**
+
+   Atlas requiere de un par de dependencias para poder funcionar, ¡No te preocupes! Todas estas dependencias son manejadas por el gestor de paquetes de node (npm), por lo cuál solo necesitaras ejecutar un comando
+
+   ```bash
+   # si utilizas npm:
+   npm install
+   # si utilizas yarn:
+   yarn install
+   ```
+
+   Una vez ejecutado el comando ya estarás listo para ejecutar el proyecto de forma local
+
+   > **Nota**: Es posible que equipos que utilizan una arquitectura ARM tengan problemas al momento de instalar las dependencias, esto se debe a que el pre-procesador de estilos sass aún no está porteado completamente para ese tipo de arquitecturas.
 
 ### Instrucciones
 
@@ -93,28 +92,18 @@ Incluye aquí las formas de contribuir a tu proyecto.
 
 Ejemplo:
 
-Revisa por favor si puedes contribuir primero con los issues solicitados en el apartado de issues del [Repositorio](https://github.com/)
+Revisa por favor si puedes contribuir primero con los issues solicitados en el apartado de issues del [Repositorio](https://github.com/devspacemx/atlas)
 
 Considera contribuir al proyecto de cualquier forma. Un buen inicio es la documentación o agregando tu username de twitter o github en este documento. Las modificaciones son aceptadas por pull request en el siguiente repositorio. [Repositorio](https://github.com/).
-
-## Referencias
-
-1. Bradley, T. (2013) [El Hacker Cívico: Civic-Minded Techies Gain Sway With Government in Mexico and Beyond](http://www.huffingtonpost.com/theresa-bradley/el-hacker-civico-how-civi_b_4334088.html). *The Huffington Post*.
-2. Bracy, C. (2014) [Why Good Hackers Make Good Citizens](https://www.youtube.com/watch?v=QeAGu40vZzI).
-3. Codeando México. (2015) [Los hackers cívicos mexicanos](https://www.fayerwayer.com/2015/01/los-hackers-civicos-mexicanos/). *FayerWayer*.
-4. Goldstein, B., Dyson, L. (2013) [Beyond Transparency: Open Data and the Future of Civic Innovation](http://beyondtransparency.org).
-5. Barry, L. (2016) [vTaiwan: Public Participation Methods on the Cyberpunk Frontier of Democracy](https://civichall.org/civicist/vtaiwan-democracy-frontier). *Civicist*.
-6. Swartz, A. (2008) [Open Access Guerrilla Manifesto](https://archive.org/stream/GuerillaOpenAccessManifesto/Goamjuly2008_djvu.txt).
 
 ## Créditos
 
 ### Core-Team
 
-- [octocat](http://github.com/octocat)
+- [mxarc](http://twitter.com/mxarc)
 
 ### Otros contribuidores
 
-Este proyecto tampoco hubiera sido posible sin el apoyo de Richard Stallman, Aaron Swartz, Edward Snowden, Kevin Mitnick, Linus Torvalds y Chelsea Manning.
 
 `{}` con ❤️ por la comunidad de [DevSpace](https://www.devspace.mx).
 
