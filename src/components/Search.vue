@@ -27,11 +27,11 @@
           <div
             v-for="index in indices"
             :key="index.indexId"
-            class="position-absolute top-100 text-dark results shadow px-2 px-lg-3"
+            class="position-absolute top-100 text-dark results shadow"
           >
-            <div v-for="result in index.hits" :key="result.id">
+            <div class="result" v-for="result in index.hits" :key="result.id">
               <g-link :to="result.path" class="d-flex align-items-center">
-                <div class="my-3">
+                <div class="my-3 px-2 px-lg-3">
                   <p
                     class="mb-0 text-black fw-bold fs-1 text-truncate d-inline-block"
                   >
@@ -67,6 +67,11 @@ export default {
 };
 </script>
 <style lang="scss" scoped>
+
+.result:hover {
+  background-color: #e6e6e6;
+}
+
 .results {
   width: 20rem;
   background-color: #fefefe;
