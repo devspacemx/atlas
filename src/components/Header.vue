@@ -44,6 +44,15 @@
                 >Sobre Atlas</g-link
               >
             </li>
+            <li class="nav-item">
+              <a
+                class="nav-link fw-medium"
+                target="_blank"
+                rel="noreferrer"
+                href="https://github.com/devspacemx/atlas"
+                >GitHub</a
+              >
+            </li>
           </ul>
           <form class="d-flex py-3 py-lg-0">
             <g-link

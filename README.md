@@ -15,17 +15,15 @@ Te damos la más cordial bienvenida, aquí puedes conocer todos los detalles det
 
 ## 📖 Índice
 
-- [Nombre del proyecto](#nombre-del-proyecto)
-  - [📖 Índice](#%f0%9f%93%96-%c3%8dndice)
+- [Atlas de comunidades tecnológicas 🌎](#atlas-de-comunidades-tecnológicas-)
+  - [📖 Índice](#-índice)
   - [Acerca del proyecto](#acerca-del-proyecto)
   - [Requisitos](#requisitos)
   - [Comienza](#comienza)
     - [Descarga](#descarga)
-    - [Instrucciones](#instrucciones)
-    - [Ejecución](#ejecuci%c3%b3n)
+    - [Ejecución](#ejecución)
   - [Contribuye](#contribuye)
-  - [Referencias](#referencias)
-  - [Créditos](#cr%c3%a9ditos)
+  - [Créditos](#créditos)
     - [Core-Team](#core-team)
     - [Otros contribuidores](#otros-contribuidores)
   - [Licencia](#licencia)
