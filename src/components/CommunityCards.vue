@@ -5,22 +5,20 @@
       class="col-lg-4 col-md-6 col-xs-12 mb-4"
       :key="item.id"
     >
-      <div class="card h-100 shadow px-2 px-lg-3 card-span">
+      <g-link :to="item.node.path" class="text-decoration-none text-reset card h-100 shadow px-2 px-lg-3 card-span">
         <div class="card-body">
           <div class="d-flex align-items-center">
-            <g-link :to="item.node.path">
-              <g-image
-                :src="item.node.image"
-                :alt="`Logo ${item.node.title}`"
-                class="me-3 me-md-3"
-              />
-            </g-link>
+            <g-image
+              :src="item.node.image"
+              :alt="`Logo ${item.node.title}`"
+              class="me-3 me-md-3"
+            />
             <div class="my-3">
-              <g-link
-                :to="item.node.path"
+              <p
                 class="mb-0 text-black fw-bold fs-1 text-truncate d-inline-block"
-                >{{ item.node.title }}</g-link
               >
+                {{ item.node.title }}
+              </p>
               <p class="fw-normal mb-0">
                 <font-awesome :icon="['fas', 'map-marker-alt']" />
                 {{ item.node.location }}
@@ -49,7 +47,7 @@
             </div>
           </div>
         </div>
-      </div>
+      </g-link>
     </div>
   </div>
 </template>
