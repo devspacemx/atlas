@@ -147,17 +147,9 @@ export default {
         .digest("hex")}`
     );
     const imageURL = encodeURI(
-      `https://comunidades.lat${this.$page.community.image.source}?v=${shajs(
-        "sha256"
-      )
-        .update(this.$page.community.content)
-        .digest("hex")}`
+      `https://comunidades.lat${this.$page.community.image.src}`
     );
-    const logoURL = encodeURI(
-      `https://comunidades.lat/logo.png?v=${shajs("sha256")
-        .update(this.$page.community.content)
-        .digest("hex")}`
-    );
+    const logoURL = encodeURI(`https://comunidades.lat/logo.png`);
     const socialImage =
       `https://motif.imgix.com/i?url=${pageURL}` +
       `&image_url=${imageURL}` +
