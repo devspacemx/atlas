@@ -101,7 +101,7 @@ Para poder levantar el proyecto en tu equipo local de desarrollo, es necesario q
 Agregar una comunidad es muy sencillo, solo necesitas:
 
 1. Clona el repositorio en tu cuenta de GitHub, encontrarás el botón en la parte superior derecha del repositorio y dice **Fork**
-2. Crea un archivo con formato `.md` con el nombre de la comunidad en la carpeta `comunidades` en la raíz del repositorio, puedes seguir la plantilla llamada `template-comunidades.md` en la raíz del repositorio.
+2. Crea un archivo con formato `.md` con el nombre de la comunidad en la carpeta `comunidades`, puedes seguir la plantilla llamada `template-comunidades.md` en la raíz del repositorio.
 3. Sube el logotipo en la carpeta de `uploads`
 4. Prueba tus cambios ejecutando los comandos del apartado de [Ejecución](#ejecución)
 5. Crea un Pull Request
