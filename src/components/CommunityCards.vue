@@ -7,7 +7,6 @@
     >
       <div class="card h-100 shadow px-2 px-lg-3 card-span">
         <div class="card-body">
-          <h5 class="fw-bold lh-base fs-1 text-700"></h5>
           <div class="d-flex align-items-center">
             <g-link :to="item.node.path">
               <g-image

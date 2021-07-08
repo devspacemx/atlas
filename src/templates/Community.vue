@@ -37,7 +37,7 @@
           <div class="sidebar-box">
             <h3>Ubicación</h3>
             <p class="fw-normal mb-0">
-              <font-awesome :icon="['fas', 'map-marker-alt']" />
+              <font-awesome size="lg" :icon="['fas', 'map-marker-alt']" />
               {{ $page.community.location }}
             </p>
           </div>

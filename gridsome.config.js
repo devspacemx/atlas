@@ -66,7 +66,7 @@ module.exports = {
         apiKey: process.env.ALGOLIA_ADMIN_KEY,
         collections,
         chunkSize: 10000, // default: 1000
-        enablePartialUpdates: true, // default: false
+        enablePartialUpdates: false, // default: false
       },
     },
     {
