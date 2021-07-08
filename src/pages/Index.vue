@@ -67,7 +67,7 @@ query Community {
           title
           path
         }
-        image (width: 100, quality: 70)
+        image (width: 100, quality: 90)
       }
     }
   }

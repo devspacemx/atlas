@@ -29,7 +29,7 @@ communities: allCommunity (sortBy: "date", order: DESC, perPage: 18, page: $page
           title
           path
         }
-        image (width: 100, quality: 70)
+        image (width: 100, quality: 90)
       }
     }
 }
