@@ -80,7 +80,8 @@ query Community ($path: String!) {
     title
     date
     content
-    image (width: 300, quality: 90)
+    path
+    image (width: 400, quality: 100)
     description
     tags {
       title
@@ -98,6 +99,8 @@ query Community ($path: String!) {
 </page-query>
 
 <script>
+import shajs from "sha.js";
+
 export default {
   data() {
     return {
@@ -138,26 +141,54 @@ export default {
     },
   },
   metaInfo() {
-    const image = this.$page.community.image?.src;
-    const imagePath = this.$url(image);
+    const pageURL = encodeURI(
+      `https://comunidades.lat${this.$page.community.path}?v=${shajs("sha256")
+        .update(this.$page.community.content)
+        .digest("hex")}`
+    );
+    const imageURL = encodeURI(
+      `https://comunidades.lat${this.$page.community.image.source}?v=${shajs(
+        "sha256"
+      )
+        .update(this.$page.community.content)
+        .digest("hex")}`
+    );
+    const logoURL = encodeURI(
+      `https://comunidades.lat/logo.png?v=${shajs("sha256")
+        .update(this.$page.community.content)
+        .digest("hex")}`
+    );
+    const socialImage =
+      `https://motif.imgix.com/i?url=${pageURL}` +
+      `&image_url=${imageURL}` +
+      `&color=add5ff&` +
+      `logo_url=${logoURL}` +
+      `&logo_alignment=top%2Cleft` +
+      `&text_alignment=bottom%2Ccenter&logo_padding=70&font_family=Avenir%20Next%20Demi%2CBold&text_color=1d1d1d`;
+    // add "Comunidad" as starter word in image if not present
+    const communityName =
+      this.$page.community.title.split(" ")[0].toLowerCase() !== "comunidad"
+        ? `Comunidad ${this.$page.community.title}`
+        : this.$page.community.title;
     return this.$seo({
-      title: this.$page.community.title,
+      title: communityName,
+      baseUrl: "https://comunidades.lat",
       description: this.$page.community.description,
-      keywords: `atlas,atlas comunidades,atlas tech,...${
-        this.$page.community.tags
-      }`,
+      keywords: `atlas,atlas comunidades,atlas tech,${[
+        ...this.$page.community.tags,
+      ]}`,
       lang: "es",
       language: "Spanish",
-      image: imagePath,
+      image: socialImage,
       openGraph: {
         title: this.$page.community.title,
         type: "website",
-        image: imagePath,
+        image: socialImage,
       },
       twitter: {
         title: this.$page.community.title,
         type: "summary",
-        image: imagePath,
+        image: socialImage,
       },
       script: [{ src: "https://platform.twitter.com/widgets.js", body: true }],
     });
