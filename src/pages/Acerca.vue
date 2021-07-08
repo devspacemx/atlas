@@ -98,11 +98,11 @@
             </p>
             <ul class="text-dark">
               <li>
-                💻 Clonar el
+                💻 Clona el
                 <a href="https://github.com/devspacemx/atlas" target="_blank"
                   >repositorio de GitHub</a
                 >
-                del Atlas de comunidades y agregar un registro en forma de
+                del Atlas de comunidades y agrega un registro en forma de
                 archivo markdown al registro de comunidades, sigue las
                 instrucciones en el archivo <b>README.md</b> en la raíz del
                 repositorio.<br />Una vez que termines de hacer los cambios,
@@ -111,7 +111,7 @@
               </li>
               <li>
                 📄 Llena este <a href="https://forms.gle/o4CeeMgSaJbXE7896" target="_blank">formulario de Google Docs</a> con los datos que se te
-                solicitan.
+                solicitan, una vez hayamos agregado tu comunidad al registro te notificaremos por correo electrónico.
               </li>
             </ul>
           </div>
