@@ -187,7 +187,7 @@ export default {
       },
       twitter: {
         title: this.$page.community.title,
-        type: "summary",
+        type: "summary_large_image",
         image: socialImage,
       },
       script: [{ src: "https://platform.twitter.com/widgets.js", body: true }],
