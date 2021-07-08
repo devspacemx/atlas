@@ -27,7 +27,7 @@
             </p>
             <p class="text-dark">
               En toda Latinoamérica podemos encontrar distintas comunidades, ya
-              sean de tecnologías en general O muy específicas, todas nacen
+              sean de tecnologías en general o muy específicas, todas nacen
               gracias a las necesidades y oportunidades que hay en cada país.
             </p>
             <p class="mt-3 text-dark">

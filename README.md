@@ -1,5 +1,5 @@
 <p align="center">
-<img src="https://github.com/devspacemx/atlas/blob/main/logo.png" width="500" title="Logo Atlas">
+<img src="https://github.com/devspacemx/atlas/blob/main/logo.png" width="200" title="Logo Atlas">
 </p>
 
 [![license](https://img.shields.io/badge/license-MIT-red)](LICENSE.md)
@@ -7,7 +7,7 @@
 [![twitter](https://img.shields.io/twitter/follow/devspacemx?label=Twitter&style=flat&logo=twitter)](https://twitter.com/devspacemx)
 [![Discord](https://img.shields.io/discord/635852899066314753?label=Discord&style=flat&logo=discord)](https://discordapp.com/invite/sJ7b9Mr)
 
-# Atlas de comunidades latinoamérica
+# Atlas de comunidades tecnológicas 🌎
 
 ¡Bienvenido internauta! Este es el repositorio oficial de la plataforma Atlas de comunidades
 
@@ -34,9 +34,9 @@ Te damos la más cordial bienvenida, aquí puedes conocer todos los detalles det
 
 Atlas nace con la intención de ser una plataforma que reuna a todas las comunidades tecnológicas que trabajan en la región latinoaméricana, queremos darle mayor visibilidad a aquellas comunidades que van empezando y también ayudar a que las personas puedan encontrar un grupo dónde se reunan intereses en común.
 
-En toda Latinoamérica podemos encontrar distintas comunidades, ya
-sean de tecnologías en general O muy específicas, todas nacen
-gracias a las necesidades y oportunidades que hay en cada país.
+Atlas ha sido construido con Gridsome, un framework para construcción de sitios web estáticos hechos con Vue, esto nos permite generar sitios extremadamente eficientes y rápidos para el usuario, además de no requerir de un backend para alojar la información del sitio.
+
+El sitio está alojado en GitHub pages de forma gratuita.
 
 ## Requisitos
 
@@ -78,13 +78,20 @@ Para poder levantar el proyecto en tu equipo local de desarrollo, es necesario q
 
    > **Nota**: Es posible que equipos que utilizan una arquitectura ARM tengan problemas al momento de instalar las dependencias, esto se debe a que el pre-procesador de estilos sass aún no está porteado completamente para ese tipo de arquitecturas.
 
-### Instrucciones
-
-Utiliza como guía la sección de [Descarga](#descarga)
-
 ### Ejecución
 
-Utiliza como guía la sección de [Descarga](#descarga)
+1. **Ejecuta el proyecto**
+
+   Gridsome provee de un comando para levantar un servidor y reiniciar el sitio en cuanto realices cualquier cambio en el código fuente del proyecto, podrás acceder al sitio desde tu navegador visitando la url http://localhost:8080 (por default).
+
+   ```bash
+   # si utilizas npm:
+   npm run dev
+   # si utilizas yarn:
+   yarn run dev
+   ```
+
+   > **Observaciones**: Si realizas un cambio en un archivo markdown es necesario que pares la ejecución del comando y vuelvas a correrlo para ver los cambios.
 
 ## Contribuye
 
