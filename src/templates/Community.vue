@@ -153,7 +153,7 @@ export default {
     const socialImage =
       `https://motif.imgix.com/i?url=${pageURL}` +
       `&image_url=${imageURL}` +
-      `&color=add5ff&` +
+      `&color=94a2b3&` +
       `logo_url=${logoURL}` +
       `&logo_alignment=top%2Cleft` +
       `&text_alignment=bottom%2Ccenter&logo_padding=70&font_family=Avenir%20Next%20Demi%2CBold&text_color=1d1d1d`;
@@ -162,6 +162,10 @@ export default {
       this.$page.community.title.split(" ")[0].toLowerCase() !== "comunidad"
         ? `Comunidad ${this.$page.community.title}`
         : this.$page.community.title;
+      console.log(communityName);
+      console.log(pageURL);
+      console.log(imageURL);
+      console.log(socialImage);
     return this.$seo({
       title: communityName,
       baseUrl: "https://comunidades.lat",

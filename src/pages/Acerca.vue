@@ -31,7 +31,7 @@
               gracias a las necesidades y oportunidades que hay en cada país.
             </p>
             <p class="mt-3 text-dark">
-              Las de software, las de hardware, las de emprendimiento, y
+              Las de software, las de hardware, las de emprendimiento y
               <b>más...</b>
               Todas participando activamente en generar conocimiento y
               experiencias para sus miembros.

@@ -34,7 +34,7 @@
                 target="_blank"
                 rel="noreferrer"
                 role="button"
-              >Comparte el atlas con tus amigos</a>
+              >Comparte el Atlas con tus amigos</a>
             </span>
           </div>
         </div>
