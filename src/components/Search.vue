@@ -7,22 +7,27 @@
     <ais-configure :hits-per-page.camel="5" :distinct="true" />
     <ais-autocomplete>
       <div slot-scope="{ currentRefinement, indices, refine }">
-        <input
-          :value="currentRefinement"
-          class="form-control position-relative"
-          type="search"
-          placeholder="Buscar comunidad..."
-          aria-label="Buscar comunidad"
-          autocomplete="off"
-          autocorrect="off"
-          autocapitalize="none"
-          spellcheck="false"
-          @input="refine($event.currentTarget.value)"
-        />
-        <ais-powered-by
-          class="position-absolute top-50 end-0 translate-middle-y"
-          style="margin-right:25px"
-        />
+        <div class="input-group">
+          <span class="input-group-text">
+            <font-awesome :icon="['fas', 'search']"
+          /></span>
+          <input
+            :value="currentRefinement"
+            class="form-control position-relative"
+            type="search"
+            placeholder="Buscar comunidad..."
+            aria-label="Buscar comunidad"
+            autocomplete="off"
+            autocorrect="off"
+            autocapitalize="none"
+            spellcheck="false"
+            @input="refine($event.currentTarget.value)"
+          />
+          <span class="input-group-text">
+            <ais-powered-by
+              class="w-50"
+          /></span>
+        </div>
         <div v-if="currentRefinement">
           <div
             v-for="index in indices"
@@ -67,13 +72,12 @@ export default {
 };
 </script>
 <style lang="scss" scoped>
-
 .result:hover {
   background-color: #e6e6e6;
 }
 
 .results {
-  width: 20rem;
+  width: 100%;
   background-color: #fefefe;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;

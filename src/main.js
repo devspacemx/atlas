@@ -8,7 +8,11 @@ import {
   faTelegram,
   faTwitter,
 } from "@fortawesome/free-brands-svg-icons";
-import { faLink, faMapMarkerAlt } from "@fortawesome/free-solid-svg-icons";
+import {
+  faLink,
+  faMapMarkerAlt,
+  faSearch,
+} from "@fortawesome/free-solid-svg-icons";
 // Adding FontAwesome
 import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 import Vue from "vue";
@@ -26,7 +30,8 @@ library.add(
   faGithub,
   faTelegram,
   faDiscord,
-  faInstagram
+  faInstagram,
+  faSearch
 );
 
 // Import FontAwesome
