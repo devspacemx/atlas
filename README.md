@@ -1,38 +1,42 @@
-<p align="center">
+<div align="center">
 <img src="https://github.com/devspacemx/atlas/blob/main/logo.png" width="200" title="Logo Atlas">
-</p>
+<p><sub>🌎 Atlas de comunidades tecnológicas</sub></p><br />
+</div>
 
-[![license](https://img.shields.io/badge/license-MIT-red)](LICENSE.md)
-[![website](https://img.shields.io/badge/website-comunidades.lat-blue)](https://comunidades.lat/)
-[![twitter](https://img.shields.io/twitter/follow/devspacemx?label=Twitter&style=flat&logo=twitter)](https://twitter.com/devspacemx)
-[![Discord](https://img.shields.io/discord/635852899066314753?label=Discord&style=flat&logo=discord)](https://discordapp.com/invite/sJ7b9Mr)
 
-# Atlas de comunidades tecnológicas 🌎
+[![license](https://img.shields.io/badge/license-MIT-red?style=for-the-badge)](LICENSE.md)
+[![build](https://img.shields.io/github/workflow/status/devspacemx/atlas/update-site/main?logo=github&style=for-the-badge)](LICENSE.md)
+
+
+[![website](https://img.shields.io/badge/website-comunidades.lat-blue?style=for-the-badge)](https://comunidades.lat/)
+[![twitter](https://img.shields.io/twitter/follow/devspacemx?label=Twitter&style=for-the-badge&logo=twitter)](https://twitter.com/devspacemx)
+[![Discord](https://img.shields.io/discord/635852899066314753?label=Discord&style=for-the-badge&logo=discord)](https://discordapp.com/invite/sJ7b9Mr)
+
+> 💻 Puedes visitar el Atlas en la dirección de <https://comunidades.lat>
 
 ¡Bienvenido internauta! Este es el repositorio oficial de la plataforma Atlas de comunidades
 
-Te damos la más cordial bienvenida, aquí puedes conocer todos los detalles detrás del proyecto Atlas y cómo colaborar para hacer más grande la plataforma.
+Aquí puedes conocer todos los detalles detrás del proyecto Atlas y como colaborar para hacer más grande la plataforma.
 
 ## 📖 Índice
 
-- [Atlas de comunidades tecnológicas 🌎](#atlas-de-comunidades-tecnológicas-)
-  - [📖 Índice](#-índice)
-  - [Acerca del proyecto](#acerca-del-proyecto)
-  - [Requisitos](#requisitos)
-  - [Desarrollo](#desarrollo)
-    - [Descarga](#descarga)
-    - [Ejecución](#ejecución)
-  - [Agregando una comunidad](#agregando-una-comunidad)
-    - [Estructura de un archivo de comunidad](#estructura-de-un-archivo-de-comunidad)
-  - [Contribuye](#contribuye)
-  - [Créditos](#créditos)
-    - [Core-Team](#core-team)
-  - [Licencia](#licencia)
+- [📖 Índice](#-índice)
+- [Acerca del proyecto](#acerca-del-proyecto)
+- [Requisitos](#requisitos)
+- [Desarrollo](#desarrollo)
+  - [Descarga](#descarga)
+  - [Ejecución](#ejecución)
+- [Agregando una comunidad](#agregando-una-comunidad)
+  - [Estructura de un archivo de comunidad](#estructura-de-un-archivo-de-comunidad)
+- [Contribuye](#contribuye)
+- [Créditos](#créditos)
+  - [Core-Team](#core-team)
+- [Licencia](#licencia)
 
 ## Acerca del proyecto
 
 <p align="center">
-<img src="https://github.com/devspacemx/atlas/blob/main/collab.png" width="300" title="Colaborar">
+<img src="https://github.com/devspacemx/atlas/blob/main/screenshot.jpg" width="400" title="El Atlas">
 </p>
 
 Atlas nace con la intención de ser una plataforma que reuna a todas las comunidades tecnológicas que trabajan en la región latinoaméricana, queremos darle mayor visibilidad a aquellas comunidades que van empezando y también ayudar a que las personas puedan encontrar un grupo dónde se reunan intereses en común.
@@ -97,6 +101,10 @@ Para poder levantar el proyecto en tu equipo local de desarrollo, es necesario q
    > **Observaciones**: Si realizas un cambio en un archivo markdown es necesario que pares la ejecución del comando y vuelvas a correrlo para ver los cambios.
 
 ## Agregando una comunidad
+
+<p align="center">
+<img src="https://github.com/devspacemx/atlas/blob/main/collab.png" width="250" title="Colabora">
+</p>
 
 Agregar una comunidad es muy sencillo, solo necesitas:
 
