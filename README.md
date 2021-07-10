@@ -10,6 +10,8 @@
 
 Aquí puedes conocer todos los detalles detrás del proyecto Atlas y como colaborar para hacer más grande la plataforma.
 
+¿Quieres agregar una comunidad al Atlas? Mira en la sección de [Agregando una comunidad](#agregando-una-comunidad)
+
 <div align="center">
 
 [![license](https://img.shields.io/badge/license-MIT-red)](LICENSE.md)
@@ -108,7 +110,9 @@ Para poder levantar el proyecto en tu equipo local de desarrollo, es necesario q
 <img src="https://github.com/devspacemx/atlas/blob/main/collab.png" width="250" title="Colabora">
 </p>
 
-Agregar una comunidad es muy sencillo, solo necesitas:
+> 📑 Alternativamente puedes llenar un formulario de **Google Docs** en la siguiente liga: <https://forms.gle/o4CeeMgSaJbXE7896>
+
+Agregar una comunidad es muy sencillo, solo necesitas hacer lo siguiente:
 
 1. Clona el repositorio en tu cuenta de GitHub, encontrarás el botón en la parte superior derecha del repositorio y dice **Fork**
 2. Crea un archivo con formato `.md` con el nombre de la comunidad en la carpeta `comunidades`, puedes seguir la plantilla llamada `template-comunidades.md` en la raíz del repositorio.
