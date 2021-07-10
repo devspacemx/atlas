@@ -34,7 +34,7 @@
               {{ $page.community.description }}
             </p>
           </div>
-          <div class="sidebar-box">
+          <div v-if="hasLocation" class="sidebar-box">
             <h3>Ubicación</h3>
             <p class="fw-normal mb-0">
               <font-awesome size="lg" :icon="['fas', 'map-marker-alt']" />
@@ -132,7 +132,10 @@ export default {
   },
   computed: {
     hasTwitter: function() {
-      return this.$page.community.twitter !== "";
+      return this.$page.community.twitter !== '';
+    },
+    hasLocation: function() {
+      return this.$page.community.location !== '';
     },
     validSocial: function() {
       return this.socialMedia.filter(
