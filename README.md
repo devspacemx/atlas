@@ -2,12 +2,6 @@
 <img src="https://github.com/devspacemx/atlas/blob/main/logo.png" width="200" title="Logo Atlas">
 </div>
 
-[![license](https://img.shields.io/badge/license-MIT-red)](LICENSE.md)
-[![build](https://img.shields.io/github/workflow/status/devspacemx/atlas/update-site/main?logo=github)](LICENSE.md)
-[![website](https://img.shields.io/badge/website-comunidades.lat-blue)](https://comunidades.lat/)
-[![twitter](https://img.shields.io/twitter/follow/devspacemx?label=Twitter&logo=twitter)](https://twitter.com/devspacemx)
-[![Discord](https://img.shields.io/discord/635852899066314753?label=Discord&logo=discord)](https://discordapp.com/invite/sJ7b9Mr)
-
 # 🌎 Atlas de comunidades
 
 > 💻 Puedes visitar el Atlas en la dirección de <https://comunidades.lat>
@@ -15,6 +9,15 @@
 ¡Bienvenido internauta! Este es el repositorio oficial de la plataforma Atlas de comunidades
 
 Aquí puedes conocer todos los detalles detrás del proyecto Atlas y como colaborar para hacer más grande la plataforma.
+
+<div align="center">
+
+[![license](https://img.shields.io/badge/license-MIT-red)](LICENSE.md)
+[![website](https://img.shields.io/badge/website-comunidades.lat-blue)](https://comunidades.lat/)
+[![twitter](https://img.shields.io/twitter/follow/devspacemx?label=Twitter&logo=twitter)](https://twitter.com/devspacemx)
+[![Discord](https://img.shields.io/discord/635852899066314753?label=Discord&logo=discord)](https://discordapp.com/invite/sJ7b9Mr)
+
+</div>
 
 ## 📖 Índice
 
