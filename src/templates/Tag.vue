@@ -1,9 +1,28 @@
 <template>
   <Layout>
-    <div class="container">
-      <h1 class="mt-7">Comunidades con el tag: {{ $page.tag.title }}</h1>
-      <Pager :data="$page.tag.belongsTo.pageInfo"></Pager>
-      <CommunityCards :communities="$page.tag.belongsTo.edges" />
+    <div class="container mt-8">
+      <div class="row">
+        <div class="col-lg-10 order-1">
+          <h1 class="fw-bold">Comunidades con el tag: {{ $page.tag.title }}</h1>
+          <Pager :data="$page.tag.belongsTo.pageInfo"></Pager>
+          <CommunityCards :communities="$page.tag.belongsTo.edges" />
+        </div>
+        <div class="col-lg-2 sidebar order-0">
+          <div class="sidebar-box mt-2">
+            <h3>Tags</h3>
+            <div class="tagcloud">
+              <g-link
+                v-for="item in $page.tags.edges"
+                :to="item.node.path"
+                :key="item.node.id"
+                v-bind:class="(isCurrentTag(item.node.title) ? 'text-info' : '')"
+              >
+                {{ item.node.title }}
+              </g-link>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </Layout>
 </template>
@@ -35,6 +54,15 @@ query Tag ($id: ID!, $page: Int) {
       }
     }
   }
+  tags: allTag {
+    edges {
+      node {
+        id
+        path
+        title
+      }
+    }
+  }
 }
 </page-query>
 
@@ -46,6 +74,11 @@ export default {
   components: {
     Pager,
     CommunityCards,
+  },
+  methods: {
+    isCurrentTag(tag){
+      return tag === this.$page.tag.title;
+    },
   },
   metaInfo() {
     return {

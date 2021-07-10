@@ -56,7 +56,7 @@
           </ul>
           <form class="d-flex py-3 py-lg-0">
             <g-link
-              class="btn btn-info me-1"
+              class="btn btn-info me-1 text-truncate"
               to="/acerca#nueva-comunidad"
               role="button"
               >Añade una comunidad</g-link
