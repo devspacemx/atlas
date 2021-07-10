@@ -2,11 +2,11 @@
 <img src="https://github.com/devspacemx/atlas/blob/main/logo.png" width="200" title="Logo Atlas">
 </div>
 
-[![license](https://img.shields.io/badge/license-MIT-red?style=for-the-badge)](LICENSE.md)
-[![build](https://img.shields.io/github/workflow/status/devspacemx/atlas/update-site/main?logo=github&style=for-the-badge)](LICENSE.md)
-[![website](https://img.shields.io/badge/website-comunidades.lat-blue?style=for-the-badge)](https://comunidades.lat/)
-[![twitter](https://img.shields.io/twitter/follow/devspacemx?label=Twitter&style=for-the-badge&logo=twitter)](https://twitter.com/devspacemx)
-[![Discord](https://img.shields.io/discord/635852899066314753?label=Discord&style=for-the-badge&logo=discord)](https://discordapp.com/invite/sJ7b9Mr)
+[![license](https://img.shields.io/badge/license-MIT-red)](LICENSE.md)
+[![build](https://img.shields.io/github/workflow/status/devspacemx/atlas/update-site/main?logo=github)](LICENSE.md)
+[![website](https://img.shields.io/badge/website-comunidades.lat-blue)](https://comunidades.lat/)
+[![twitter](https://img.shields.io/twitter/follow/devspacemx?label=Twitter&logo=twitter)](https://twitter.com/devspacemx)
+[![Discord](https://img.shields.io/discord/635852899066314753?label=Discord&logo=discord)](https://discordapp.com/invite/sJ7b9Mr)
 
 # 🌎 Atlas de comunidades
 
