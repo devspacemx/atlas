@@ -35,7 +35,7 @@ Aquí puedes conocer todos los detalles detrás del proyecto Atlas y como colabo
 ## Acerca del proyecto
 
 <p align="center">
-<img src="https://github.com/devspacemx/atlas/blob/main/screenshot.jpg" width="400" title="El Atlas">
+<img src="https://github.com/devspacemx/atlas/blob/main/screenshot.jpg" width="600" title="El Atlas">
 </p>
 
 Atlas nace con la intención de ser una plataforma que reuna a todas las comunidades tecnológicas que trabajan en la región latinoaméricana, queremos darle mayor visibilidad a aquellas comunidades que van empezando y también ayudar a que las personas puedan encontrar un grupo dónde se reunan intereses en común.
