@@ -1,16 +1,14 @@
 <div align="center">
 <img src="https://github.com/devspacemx/atlas/blob/main/logo.png" width="200" title="Logo Atlas">
-<p><sub>🌎 Atlas de comunidades tecnológicas</sub></p><br />
 </div>
-
 
 [![license](https://img.shields.io/badge/license-MIT-red?style=for-the-badge)](LICENSE.md)
 [![build](https://img.shields.io/github/workflow/status/devspacemx/atlas/update-site/main?logo=github&style=for-the-badge)](LICENSE.md)
-
-
 [![website](https://img.shields.io/badge/website-comunidades.lat-blue?style=for-the-badge)](https://comunidades.lat/)
 [![twitter](https://img.shields.io/twitter/follow/devspacemx?label=Twitter&style=for-the-badge&logo=twitter)](https://twitter.com/devspacemx)
 [![Discord](https://img.shields.io/discord/635852899066314753?label=Discord&style=for-the-badge&logo=discord)](https://discordapp.com/invite/sJ7b9Mr)
+
+# 🌎 Atlas de comunidades
 
 > 💻 Puedes visitar el Atlas en la dirección de <https://comunidades.lat>
 
@@ -20,18 +18,19 @@ Aquí puedes conocer todos los detalles detrás del proyecto Atlas y como colabo
 
 ## 📖 Índice
 
-- [📖 Índice](#-índice)
-- [Acerca del proyecto](#acerca-del-proyecto)
-- [Requisitos](#requisitos)
-- [Desarrollo](#desarrollo)
-  - [Descarga](#descarga)
-  - [Ejecución](#ejecución)
-- [Agregando una comunidad](#agregando-una-comunidad)
-  - [Estructura de un archivo de comunidad](#estructura-de-un-archivo-de-comunidad)
-- [Contribuye](#contribuye)
-- [Créditos](#créditos)
-  - [Core-Team](#core-team)
-- [Licencia](#licencia)
+- [🌎 Atlas de comunidades](#-atlas-de-comunidades)
+  - [📖 Índice](#-índice)
+  - [Acerca del proyecto](#acerca-del-proyecto)
+  - [Requisitos](#requisitos)
+  - [Desarrollo](#desarrollo)
+    - [Descarga](#descarga)
+    - [Ejecución](#ejecución)
+  - [Agregando una comunidad](#agregando-una-comunidad)
+    - [Estructura de un archivo de comunidad](#estructura-de-un-archivo-de-comunidad)
+  - [Contribuye](#contribuye)
+  - [Créditos](#créditos)
+    - [Core-Team](#core-team)
+  - [Licencia](#licencia)
 
 ## Acerca del proyecto
 
