@@ -94,6 +94,7 @@ query Community ($path: String!) {
     github
     web
     location
+    youtube
   }
 }
 </page-query>
