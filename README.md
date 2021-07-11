@@ -136,6 +136,7 @@ twitter: username
 facebook: username
 instagram: username
 github: username
+youtube: username o lo que vaya después de youtube.com/<!here>
 web: https://web.com
 ---
 
