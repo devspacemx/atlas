@@ -152,7 +152,7 @@ export default {
         .digest("hex")}`
     );
     const imageURL = encodeURI(
-      `https://devspacemx.github.io/atlas${this.$page.community.image.src}`
+      `https://devspacemx.github.io${this.$page.community.image.src}`
     );
     const logoURL = encodeURI(`https://devspacemx.github.io/atlas/logo.png`);
     const socialImage =
