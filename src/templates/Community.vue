@@ -5,9 +5,7 @@
         <div class="col-lg-8">
           <p>
             <g-image
-              immediate
               class="mb-1 image-fluid mx-auto d-block"
-              width="200"
               :src="$page.community.image"
               :alt="`Logotipo ${$page.community.title}`"
             />
