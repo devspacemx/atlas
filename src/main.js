@@ -7,6 +7,7 @@ import {
   faInstagram,
   faTelegram,
   faTwitter,
+  faYoutube,
 } from "@fortawesome/free-brands-svg-icons";
 import {
   faLink,
@@ -31,7 +32,8 @@ library.add(
   faTelegram,
   faDiscord,
   faInstagram,
-  faSearch
+  faSearch,
+  faYoutube
 );
 
 // Import FontAwesome

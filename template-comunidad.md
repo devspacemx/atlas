@@ -8,6 +8,7 @@ image: /uploads/logo.png
 # Tags opcionales, te recomendamos colocar por lo menos uno
 twitter: username
 facebook: username
+youtube: username (o lo que vaya después de youtube.com/)
 instagram: username
 github: username
 web: https://web.com
