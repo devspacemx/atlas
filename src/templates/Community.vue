@@ -132,10 +132,10 @@ export default {
   },
   computed: {
     hasTwitter: function() {
-      return this.$page.community.twitter !== '';
+      return this.$page.community.twitter !== "";
     },
     hasLocation: function() {
-      return this.$page.community.location !== '';
+      return this.$page.community.location !== "";
     },
     validSocial: function() {
       return this.socialMedia.filter(
@@ -145,14 +145,16 @@ export default {
   },
   metaInfo() {
     const pageURL = encodeURI(
-      `https://comunidades.lat${this.$page.community.path}?v=${shajs("sha256")
+      `https://devspacemx.github.io/atlas${this.$page.community.path}?v=${shajs(
+        "sha256"
+      )
         .update(this.$page.community.content)
         .digest("hex")}`
     );
     const imageURL = encodeURI(
-      `https://comunidades.lat${this.$page.community.image.src}`
+      `https://devspacemx.github.io/atlas${this.$page.community.image.src}`
     );
-    const logoURL = encodeURI(`https://comunidades.lat/logo.png`);
+    const logoURL = encodeURI(`https://devspacemx.github.io/atlas/logo.png`);
     const socialImage =
       `https://motif.imgix.com/i?url=${pageURL}` +
       `&image_url=${imageURL}` +
@@ -165,16 +167,16 @@ export default {
       this.$page.community.title.split(" ")[0].toLowerCase() !== "comunidad"
         ? `Comunidad ${this.$page.community.title}`
         : this.$page.community.title;
-      console.log(communityName);
-      console.log(pageURL);
-      console.log(imageURL);
-      console.log(socialImage);
+    console.log(communityName);
+    console.log(pageURL);
+    console.log(imageURL);
+    console.log(socialImage);
     return this.$seo({
       title: communityName,
-      baseUrl: "https://comunidades.lat",
+      baseUrl: "https://devspacemx.github.io/atlas",
       description: this.$page.community.description,
       keywords: `atlas,atlas comunidades,atlas tech,${[
-        ...this.$page.community.tags,
+        ...this.$page.community.tags.map((tag) => tag.title),
       ]}`,
       lang: "es",
       language: "Spanish",

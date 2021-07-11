@@ -4,10 +4,13 @@ const collections = [
       allCommunity {
         edges {
           node {
-            id
             title
             path
             location
+            tags {
+              title
+              path
+            }
           }
         }
       }
@@ -16,10 +19,10 @@ const collections = [
     indexName: process.env.ALGOLIA_INDEX_NAME || "communities", // Algolia index name
     itemFormatter: (item) => {
       return {
-        objectID: item.id,
         title: item.title,
         path: item.path,
         location: item.location,
+        tags: item.tags,
       };
     },
   },
@@ -53,6 +56,12 @@ module.exports = {
       use: "@gridsome/plugin-sitemap",
       options: {
         cacheTime: 600000,
+      },
+    },
+    {
+      use: "@gridsome/plugin-google-analytics",
+      options: {
+        id: "G-5PKVGQF287",
       },
     },
     {
