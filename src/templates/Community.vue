@@ -158,7 +158,7 @@ export default {
     const imageURL = encodeURI(
       `${siteURL}${this.$page.community.image.src}`
     );
-    const logoURL = encodeURI(`${siteURL}/logo.png`);
+    const logoURL = encodeURI(`${siteURL}/atlas/logo.png`);
     const socialImage =
       `https://motif.imgix.com/i?url=${pageURL}` +
       `&image_url=${imageURL}` +
@@ -170,10 +170,9 @@ export default {
       title: this.$page.community.title,
       baseUrl: `${siteURL}/atlas`,
       description: this.$page.community.description,
-      keywords: `atlas,atlas comunidades,atlas tech,${([
+      keywords: `atlas,atlas comunidades,atlas tech,${this.$page.community.title},${([
         ...this.$page.community.tags.map((tag) => tag.title),
-      ],
-      this.$page.community.title)}`,
+      ])}`,
       lang: "es",
       language: "Spanish",
       image: socialImage,
