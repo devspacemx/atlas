@@ -4,6 +4,7 @@ const collections = [
       allCommunity {
         edges {
           node {
+            id
             title
             path
             location
@@ -19,10 +20,11 @@ const collections = [
     indexName: process.env.ALGOLIA_INDEX_NAME || "communities", // Algolia index name
     itemFormatter: (item) => {
       return {
+        objectID: item.id,
         title: item.title,
         path: item.path,
         location: item.location,
-        tags: item.tags,
+        tags: item.tags.edges,
       };
     },
   },
