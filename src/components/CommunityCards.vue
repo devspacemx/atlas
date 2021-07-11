@@ -15,7 +15,7 @@
             />
             <div class="my-3">
               <p
-                class="mb-0 text-black fw-bold fs-1 text-truncate d-inline-block"
+                class="mb-0 text-black fw-bold fs-1 d-inline-block"
               >
                 {{ item.node.title }}
               </p>
