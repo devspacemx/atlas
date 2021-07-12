@@ -44,7 +44,7 @@
                   </p>
                   <p class="fw-normal mb-0">
                     <font-awesome :icon="['fas', 'map-marker-alt']" />
-                    {{ result.location.title }}
+                    {{ result.location }}
                   </p>
                 </div>
               </g-link>
