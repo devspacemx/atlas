@@ -3,9 +3,11 @@
     <div class="container mt-8">
       <div class="row">
         <div class="col-lg-10 order-1">
-          <h1 class="fw-bold">Comunidades</h1>
-          <Pager :data="$page.communities.pageInfo"></Pager>
-          <CommunityCards :communities="$page.communities.edges" />
+          <h1 class="fw-bold">
+            Comunidades en el país: {{ $page.location.title }}
+          </h1>
+          <Pager :data="$page.location.belongsTo.pageInfo"></Pager>
+          <CommunityCards :communities="$page.location.belongsTo.edges" />
         </div>
         <div class="col-lg-2 sidebar order-0">
           <div class="sidebar-box mt-2">
@@ -27,6 +29,9 @@
                 v-for="item in $page.locations.edges"
                 :to="item.node.path"
                 :key="item.node.id"
+                v-bind:class="
+                  isCurrentLocation(item.node.title) ? 'text-info' : ''
+                "
               >
                 {{ item.node.title }}
               </g-link>
@@ -39,17 +44,17 @@
 </template>
 
 <page-query>
-query Communities($page: Int) {
-communities: allCommunity (sortBy: "date", order: DESC, perPage: 21, page: $page) @paginate {
-    totalCount
-    pageInfo { 
-      totalPages
-      currentPage
-      isFirst
-      isLast
-      } 
-    edges {
-      node {
+query Location ($id: ID!, $page: Int) {
+  location: location (id: $id) {
+    title
+    belongsTo (page: $page, perPage: 21) @paginate {
+      pageInfo {
+        totalPages
+        currentPage
+      }
+      edges {
+        node {
+          ...on Community {
         id
         path
         title
@@ -62,10 +67,12 @@ communities: allCommunity (sortBy: "date", order: DESC, perPage: 21, page: $page
           title
           path
         }
-        image (width: 100, quality: 90)
+        image (width: 100, quality: 70)
+          }
+        }
       }
     }
-}
+  }
   tags: allTag (sortBy: "title", order: ASC) {
     edges {
       node {
@@ -86,7 +93,6 @@ communities: allCommunity (sortBy: "date", order: DESC, perPage: 21, page: $page
   }
 }
 </page-query>
-
 <script>
 import CommunityCards from "../components/CommunityCards";
 import Pager from "../components/Pager";
@@ -96,8 +102,16 @@ export default {
     Pager,
     CommunityCards,
   },
-  metaInfo: {
-    title: "Comunidades",
+  methods: {
+    isCurrentLocation(location) {
+      return location === this.$page.location.title;
+    },
+  },
+  metaInfo() {
+    return {
+      title: `${this.$page.location.title}`,
+    };
   },
 };
 </script>
+<style lang="scss" scoped></style>

@@ -15,7 +15,19 @@
                 v-for="item in $page.tags.edges"
                 :to="item.node.path"
                 :key="item.node.id"
-                v-bind:class="(isCurrentTag(item.node.title) ? 'text-info' : '')"
+                v-bind:class="isCurrentTag(item.node.title) ? 'text-info' : ''"
+              >
+                {{ item.node.title }}
+              </g-link>
+            </div>
+          </div>
+          <div class="sidebar-box">
+            <h3>Países</h3>
+            <div class="tagcloud">
+              <g-link
+                v-for="item in $page.locations.edges"
+                :to="item.node.path"
+                :key="item.node.id"
               >
                 {{ item.node.title }}
               </g-link>
@@ -43,7 +55,10 @@ query Tag ($id: ID!, $page: Int) {
         path
         title
         description
-        location
+        location {
+          title
+          path
+        }
         tags {
           title
           path
@@ -54,7 +69,16 @@ query Tag ($id: ID!, $page: Int) {
       }
     }
   }
-  tags: allTag {
+  tags: allTag (sortBy: "title", order: ASC) {
+    edges {
+      node {
+        id
+        path
+        title
+      }
+    }
+  }
+  locations: allLocation (sortBy: "title", order: ASC) {
     edges {
       node {
         id
@@ -76,13 +100,13 @@ export default {
     CommunityCards,
   },
   methods: {
-    isCurrentTag(tag){
+    isCurrentTag(tag) {
       return tag === this.$page.tag.title;
     },
   },
   metaInfo() {
     return {
-      title: `Tag: ${this.$page.tag.title}`,
+      title: `${this.$page.tag.title}`,
     };
   },
 };

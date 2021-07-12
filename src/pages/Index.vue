@@ -62,7 +62,10 @@ query Community {
         path
         title
         description
-        location
+        location {
+          title
+          path
+        }
         tags {
           title
           path

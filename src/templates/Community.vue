@@ -26,7 +26,7 @@
               </g-link>
             </div>
           </div>
-          <div class="sidebar-box">
+          <div v-if="hasShortDescription" class="sidebar-box">
             <h3>Sobre esta comunidad</h3>
             <p>
               {{ $page.community.description }}
@@ -36,7 +36,9 @@
             <h3>Ubicación</h3>
             <p class="fw-normal mb-0">
               <font-awesome size="lg" :icon="['fas', 'map-marker-alt']" />
-              {{ $page.community.location }}
+              <g-link :to="$page.community.location.path">
+                {{ $page.community.location.title }}</g-link
+              >
             </p>
           </div>
           <div class="sidebar-box">
@@ -81,6 +83,10 @@ query Community ($path: String!) {
     path
     image (width: 400, quality: 100)
     description
+    location {
+      title
+      path
+    }
     tags {
       title
       path
@@ -91,7 +97,6 @@ query Community ($path: String!) {
     telegram
     github
     web
-    location
     youtube
   }
 }
@@ -137,7 +142,10 @@ export default {
       return this.$page.community.twitter !== "";
     },
     hasLocation: function() {
-      return this.$page.community.location !== "";
+      return this.$page.community.location.title !== "";
+    },
+    hasShortDescription: function() {
+      return this.$page.community.description !== "";
     },
     validSocial: function() {
       return this.socialMedia.filter(
@@ -146,17 +154,13 @@ export default {
     },
   },
   metaInfo() {
-    const siteURL = 'https://devspacemx.github.io';
+    const siteURL = "https://devspacemx.github.io";
     const pageURL = encodeURI(
-      `${siteURL}/atlas${this.$page.community.path}?v=${shajs(
-        "sha256"
-      )
+      `${siteURL}/atlas${this.$page.community.path}?v=${shajs("sha256")
         .update(this.$page.community.content)
         .digest("hex")}`
     );
-    const imageURL = encodeURI(
-      `${siteURL}${this.$page.community.image.src}`
-    );
+    const imageURL = encodeURI(`${siteURL}${this.$page.community.image.src}`);
     const logoURL = encodeURI(`${siteURL}/atlas/logo.png`);
     const socialImage =
       `https://motif.imgix.com/i?url=${pageURL}` +
@@ -169,9 +173,9 @@ export default {
       title: this.$page.community.title,
       baseUrl: `${siteURL}/atlas`,
       description: this.$page.community.description,
-      keywords: `atlas,atlas comunidades,atlas tech,${this.$page.community.title},${([
-        ...this.$page.community.tags.map((tag) => tag.title),
-      ])}`,
+      keywords: `atlas,atlas comunidades,atlas tech,${
+        this.$page.community.title
+      },${[...this.$page.community.tags.map((tag) => tag.title)]}`,
       lang: "es",
       language: "Spanish",
       image: socialImage,

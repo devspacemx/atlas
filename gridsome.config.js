@@ -7,7 +7,9 @@ const collections = [
             id
             title
             path
-            location
+            location {
+              title
+            }
             tags {
               title
               path
@@ -23,7 +25,7 @@ const collections = [
         objectID: item.id,
         title: item.title,
         path: item.path,
-        location: item.location,
+        location: item.location.title,
         tags: item.tags.edges,
       };
     },
@@ -49,6 +51,10 @@ module.exports = {
         refs: {
           tags: {
             typeName: "Tag",
+            create: true,
+          },
+          location: {
+            typeName: "Location",
             create: true,
           },
         },
@@ -82,6 +88,7 @@ module.exports = {
   ],
   templates: {
     Tag: "/tag/:id",
+    Location: "/ubicacion/:id",
   },
   transformers: {
     remark: {

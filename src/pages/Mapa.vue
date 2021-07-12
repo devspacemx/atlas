@@ -10,7 +10,10 @@ query Community {
         id
         path
         title
-        location
+        location {
+          title
+          path
+        }
         image (width: 100, quality: 70)
       }
     }
