@@ -37,6 +37,7 @@
             <div class="result" v-for="result in index.hits" :key="result.id">
               <g-link :to="result.path" class="d-flex align-items-center">
                 <div class="my-3 px-2 px-lg-3">
+                  <g-image height="50" :src="result.image"/>
                   <p
                     class="mb-0 text-black fw-bold fs-1 text-truncate d-inline-block"
                   >

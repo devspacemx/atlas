@@ -7,6 +7,7 @@ const collections = [
             id
             title
             path
+            image (width: 50, quality: 40)
             location {
               title
             }
@@ -26,7 +27,8 @@ const collections = [
         title: item.title,
         path: item.path,
         location: item.location.title,
-        tags: item.tags.edges,
+        tags: [...item.tags],
+        image: item.image.src,
       };
     },
   },
