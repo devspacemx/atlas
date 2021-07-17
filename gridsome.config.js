@@ -35,8 +35,8 @@ const collections = [
 ];
 
 module.exports = {
-  siteName: "Atlas de comunidades",
-  siteDescription: "Atlas de comunidades tech en Latinoamérica",
+  siteName: "Atlas de comunidades ",
+  siteDescription: "Conoce las comunidades que te rodean y súmate a ellas",
   siteUrl: "https://comunidades.lat",
   // pathPrefix: "/atlas",
   plugins: [

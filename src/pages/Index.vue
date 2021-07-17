@@ -85,9 +85,33 @@ export default {
   components: {
     CommunityCards,
   },
-  metaInfo: {
-    title: "Atlas",
-    titleTemplate: "%s",
+  metaInfo() {
+    const siteURL = "https://comunidades.lat";
+    const logoURL = encodeURI(`${siteURL}/logo.png`);
+    const socialImage =
+      `https://motif.imgix.com/i?url=${siteURL}` +
+      `&color=94a2b3&` +
+      `logo_url=${logoURL}` +
+      `&logo_alignment=top%2Cleft` +
+      `&text_alignment=bottom%2Cleft&logo_padding=70&font_family=Avenir%20Next%20Demi%2CBold&text_color=1d1d1d`;
+    return this.$seo({
+      title: "Comunidades",
+      baseUrl: `${siteURL}`,
+      keywords: `atlas,atlas comunidades,atlas tech,comunidades tech,comunidad tech,comunidad`,
+      lang: "es",
+      language: "Spanish",
+      image: socialImage,
+      openGraph: {
+        title: this.$page.community.title,
+        type: "website",
+        image: socialImage,
+      },
+      twitter: {
+        title: this.$page.community.title,
+        type: "summary_large_image",
+        image: socialImage,
+      },
+    });
   },
   data() {
     return {
