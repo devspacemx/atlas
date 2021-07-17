@@ -17,12 +17,12 @@ export const metaInfo = (seo, title) => {
     language: "Spanish",
     image: socialImage,
     openGraph: {
-      title: "Atlas de comunidades",
+      title: `${title} - Atlas de comunidades`,
       type: "website",
       image: socialImage,
     },
     twitter: {
-      title: "Atlas de comunidades",
+      title: `${title} - Atlas de comunidades`,
       type: "summary_large_image",
       image: socialImage,
     },
