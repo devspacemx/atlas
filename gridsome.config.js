@@ -47,7 +47,8 @@ module.exports = {
     {
       use: "@gridsome/source-filesystem",
       options: {
-        path: "comunidades/*.md",
+        baseDir: "./comunidades",
+        path: "*.md",
         typeName: "Community",
         resolveAbsolutePaths: true,
         remark: {
