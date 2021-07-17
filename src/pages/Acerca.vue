@@ -122,11 +122,11 @@
 </template>
 
 <script>
+import { metaInfo } from "../data";
+
 export default {
   metaInfo() {
-    return {
-      title: "¿Qué es?",
-    };
+    return metaInfo(this.$seo, '¿Qué es?');
   },
 };
 </script>

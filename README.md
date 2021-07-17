@@ -155,7 +155,7 @@ También puedes agregar comunidades en las cuales participas, solo asegurate de 
 
 ### Core-Team
 
-- [mxarc](http://twitter.com/mxarc)
+- [mxarc](https://twitter.com/mxarc)
 
 ## Licencia
 

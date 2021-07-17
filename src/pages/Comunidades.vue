@@ -90,14 +90,16 @@ communities: allCommunity (sortBy: "date", order: DESC, perPage: 21, page: $page
 <script>
 import CommunityCards from "../components/CommunityCards";
 import Pager from "../components/Pager";
+import { metaInfo } from "../data";
 
 export default {
   components: {
     Pager,
     CommunityCards,
   },
-  metaInfo: {
-    title: "Comunidades",
+  metaInfo() {
+    return metaInfo(this.$seo, 'Comunidades');
   },
+  
 };
 </script>

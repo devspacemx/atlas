@@ -93,6 +93,7 @@ query Tag ($id: ID!, $page: Int) {
 <script>
 import CommunityCards from "../components/CommunityCards";
 import Pager from "../components/Pager";
+import { metaInfo } from "../data";
 
 export default {
   components: {
@@ -105,9 +106,7 @@ export default {
     },
   },
   metaInfo() {
-    return {
-      title: `${this.$page.tag.title}`,
-    };
+    return metaInfo(this.$seo, this.$page.tag.title);
   },
 };
 </script>

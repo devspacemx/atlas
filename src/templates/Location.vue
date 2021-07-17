@@ -96,6 +96,7 @@ query Location ($id: ID!, $page: Int) {
 <script>
 import CommunityCards from "../components/CommunityCards";
 import Pager from "../components/Pager";
+import { metaInfo } from "../data";
 
 export default {
   components: {
@@ -108,9 +109,7 @@ export default {
     },
   },
   metaInfo() {
-    return {
-      title: `${this.$page.location.title}`,
-    };
+    return metaInfo(this.$seo, this.$page.location.title);
   },
 };
 </script>
