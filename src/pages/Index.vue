@@ -102,12 +102,10 @@ export default {
       language: "Spanish",
       image: socialImage,
       openGraph: {
-        title: this.$page.community.title,
         type: "website",
         image: socialImage,
       },
       twitter: {
-        title: this.$page.community.title,
         type: "summary_large_image",
         image: socialImage,
       },

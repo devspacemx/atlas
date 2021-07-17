@@ -5,16 +5,16 @@
       class="col-lg-4 col-md-6 col-xs-12 mb-4"
       :key="community.id"
     >
-    <CommunityCard :community="community" />
+      <CommunityCard :community="community.node" />
     </div>
   </div>
 </template>
 
 <script>
-  import CommunityCard from "./CommunityCard.vue";
+import CommunityCard from "./CommunityCard.vue";
 export default {
   components: {
-    CommunityCard
+    CommunityCard,
   },
   props: {
     communities: Array,
