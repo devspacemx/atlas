@@ -37,8 +37,8 @@ const collections = [
 module.exports = {
   siteName: "Atlas de comunidades",
   siteDescription: "Atlas de comunidades tech en Latinoamérica",
-  siteUrl: "https://devspacemx.github.io/atlas/",
-  pathPrefix: "/atlas",
+  siteUrl: "https://comunidades.lat",
+  // pathPrefix: "/atlas",
   plugins: [
     {
       use: "@gridsome/source-filesystem",

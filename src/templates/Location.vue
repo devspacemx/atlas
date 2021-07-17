@@ -3,7 +3,7 @@
     <div class="container mt-8">
       <div class="row">
         <div class="col-lg-10 order-1">
-          <h1 class="fw-bold">
+          <h1 class="fw-bold mb-4">
             Comunidades en el país: {{ $page.location.title }}
           </h1>
           <Pager :data="$page.location.belongsTo.pageInfo"></Pager>

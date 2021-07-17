@@ -13,7 +13,7 @@
           /></span>
           <input
             :value="currentRefinement"
-            class="form-control position-relative"
+            class="form-control"
             type="search"
             placeholder="Buscar comunidad..."
             aria-label="Buscar comunidad"
@@ -23,10 +23,6 @@
             spellcheck="false"
             @input="refine($event.currentTarget.value)"
           />
-          <span class="input-group-text">
-            <ais-powered-by
-              class="w-50"
-          /></span>
         </div>
         <div v-if="currentRefinement">
           <div
@@ -49,6 +45,9 @@
                 </div>
               </g-link>
             </div>
+             <ais-powered-by
+            class="mx-2 my-2"
+          />
           </div>
         </div>
       </div>
@@ -100,5 +99,9 @@ input[type="search"]::-webkit-search-cancel-button,
 input[type="search"]::-webkit-search-results-button,
 input[type="search"]::-webkit-search-results-decoration {
   display: none;
+}
+
+.algolia {
+  max-width: 100px;
 }
 </style>

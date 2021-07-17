@@ -51,7 +51,7 @@
           </div>
           <div
             class="col-md-12 col-lg-8 text-md-start order-lg-0 order-md-1"
-            style="max-width: 460px;"
+            style="max-width: 560px;"
           >
             <h2 class="fw-bold display-5 mb-3 mt-3">¿Por qué?</h2>
             <p class="text-dark">
@@ -84,11 +84,11 @@
           </div>
           <div
             class="col-md-12 col-lg-8 text-md-start order-lg-1 order-md-1"
-            style="max-width: 460px;"
+            style="max-width: 560px;"
           >
             <h2
               id="nueva-comunidad"
-              class="fw-bold display-5 text-md-center mb-3 mt-3"
+              class="fw-bold display-5 mb-3 mt-3"
             >
               ¿Cómo agrego una comunidad?
             </h2>

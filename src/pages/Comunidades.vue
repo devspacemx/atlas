@@ -3,7 +3,7 @@
     <div class="container mt-8">
       <div class="row">
         <div class="col-lg-10 order-1">
-          <h1 class="fw-bold">Comunidades</h1>
+          <h1 class="fw-bold mb-4">Comunidades</h1>
           <Pager :data="$page.communities.pageInfo"></Pager>
           <CommunityCards :communities="$page.communities.edges" />
         </div>

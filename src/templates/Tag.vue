@@ -3,7 +3,7 @@
     <div class="container mt-8">
       <div class="row">
         <div class="col-lg-10 order-1">
-          <h1 class="fw-bold">Comunidades con el tag: {{ $page.tag.title }}</h1>
+          <h1 class="fw-bold mb-4">Comunidades con el tag: {{ $page.tag.title }}</h1>
           <Pager :data="$page.tag.belongsTo.pageInfo"></Pager>
           <CommunityCards :communities="$page.tag.belongsTo.edges" />
         </div>

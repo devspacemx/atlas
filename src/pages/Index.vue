@@ -24,31 +24,33 @@
             </p>
             <span>
               <g-link
-                class="btn btn-md btn-info rounded-pill me-2"
-                to="/comunidades"
+                class="btn btn-info me-1"
+                to="/acerca#nueva-comunidad"
                 role="button"
-                >Conoce las comunidades</g-link
-              ><a
-                class="btn btn-link ps-1 ps-md-4 ps-lg-1"
-                :href="'https://twitter.com/intent/tweet?text=' + shareText"
-                target="_blank"
-                rel="noreferrer"
-                role="button"
-              >Comparte el Atlas con tus amigos</a>
+                >Añade una comunidad</g-link
+              >
             </span>
           </div>
         </div>
       </div>
     </section>
     <div class="container">
-      <div class="row flex-center">
-        <div class="col-auto text-center my-4">
+      <div class="row">
+        <div class="col-auto my-4">
           <h5 class="display-5 fw-bold">
-            Últimas comunidades<br />registradas
+            Últimas comunidades registradas
           </h5>
         </div>
       </div>
       <CommunityCards :communities="$page.communities.edges" />
+      <a
+        class="btn btn-link ps-1 ps-md-4 ps-lg-1"
+        :href="'https://twitter.com/intent/tweet?text=' + shareText"
+        target="_blank"
+        rel="noreferrer"
+        role="button"
+        >Comparte el Atlas con tus amigos</a
+      >
     </div>
   </Layout>
 </template>
@@ -90,7 +92,7 @@ export default {
   data() {
     return {
       shareText:
-        "🔎 ¿Ya conoces el Atlas tech?%0aEs una plataforma para dar a conocer a todas las comunidades tecnológicas de LATAM 🌎%0a¡Conoce más sobre el proyecto en 👉 https://comunidades.lat",
+        "🔎 ¿Ya conoces el Atlas tech?%0aDescubre las comunidades tecnológicas en Latinoamérica 🌎%0a¡Conoce más sobre el proyecto en 👉 https://comunidades.lat!",
     };
   },
 };

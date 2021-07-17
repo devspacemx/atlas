@@ -154,14 +154,14 @@ export default {
     },
   },
   metaInfo() {
-    const siteURL = "https://devspacemx.github.io";
+    const siteURL = "https://comunidades.lat";
     const pageURL = encodeURI(
-      `${siteURL}/atlas${this.$page.community.path}?v=${shajs("sha256")
+      `${siteURL}${this.$page.community.path}?v=${shajs("sha256")
         .update(this.$page.community.content)
         .digest("hex")}`
     );
     const imageURL = encodeURI(`${siteURL}${this.$page.community.image.src}`);
-    const logoURL = encodeURI(`${siteURL}/atlas/logo.png`);
+    const logoURL = encodeURI(`${siteURL}/logo.png`);
     const socialImage =
       `https://motif.imgix.com/i?url=${pageURL}` +
       `&image_url=${imageURL}` +
@@ -171,9 +171,9 @@ export default {
       `&text_alignment=bottom%2Cleft&logo_padding=70&font_family=Avenir%20Next%20Demi%2CBold&text_color=1d1d1d`;
     return this.$seo({
       title: this.$page.community.title,
-      baseUrl: `${siteURL}/atlas`,
+      baseUrl: `${siteURL}`,
       description: this.$page.community.description,
-      keywords: `atlas,atlas comunidades,atlas tech,${
+      keywords: `atlas,atlas comunidades,atlas tech,comunidades tech,comunidad tech,comunidad,${
         this.$page.community.title
       },${[...this.$page.community.tags.map((tag) => tag.title)]}`,
       lang: "es",
