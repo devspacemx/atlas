@@ -32,7 +32,7 @@
               <g-link class="nav-link fw-medium" to="/" exact>Inicio</g-link>
             </li>
             <li class="nav-item">
-              <g-link class="nav-link fw-medium" to="/comunidades" exact
+              <g-link class="nav-link fw-medium" to="/comunidades/" exact
                 >Comunidades</g-link
               >
             </li>
@@ -40,7 +40,7 @@
               <g-link class="nav-link fw-medium" to="/" exact>Mapa</g-link>
             </li> -->
             <li class="nav-item">
-              <g-link class="nav-link fw-medium" to="/acerca" exact
+              <g-link class="nav-link fw-medium" to="/acerca/" exact
                 >Sobre Atlas</g-link
               >
             </li>
@@ -57,7 +57,7 @@
           <form class="d-flex py-3 py-lg-0">
             <g-link
               class="btn btn-info me-1 text-truncate"
-              to="/acerca#nueva-comunidad"
+              to="/acerca#nueva-comunidad/"
               role="button"
               >Añade una comunidad</g-link
             >
