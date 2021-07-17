@@ -88,14 +88,16 @@ export default {
   metaInfo() {
     const siteURL = "https://comunidades.lat";
     const logoURL = encodeURI(`${siteURL}/logo.png`);
+    const imageURL = encodeURI(`${siteURL}/screen.png`);
     const socialImage =
       `https://motif.imgix.com/i?url=${siteURL}` +
+      `&image_url=${imageURL}` +
       `&color=94a2b3&` +
       `logo_url=${logoURL}` +
       `&logo_alignment=top%2Cleft` +
       `&text_alignment=bottom%2Cleft&logo_padding=70&font_family=Avenir%20Next%20Demi%2CBold&text_color=1d1d1d`;
     return this.$seo({
-      title: "Comunidades",
+      title: "Atlas de comunidades",
       baseUrl: `${siteURL}`,
       keywords: `atlas,atlas comunidades,atlas tech,comunidades tech,comunidad tech,comunidad`,
       lang: "es",
