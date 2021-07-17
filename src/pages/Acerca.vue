@@ -66,7 +66,12 @@
               Para que todos podamos aprender de todos, cuando las comunidades
               crecen ¡Todos nos fortalecemos!
             </p>
-            <a class="btn btn-lg btn-info rounded-pill" href="#"
+            <a
+              class="btn btn-info me-1 text-truncate"
+              :href="'https://twitter.com/intent/tweet?text=' + shareText"
+              target="_blank"
+              rel="noreferrer"
+              role="button"
               >Comparte con tu red</a
             >
           </div>
@@ -86,10 +91,7 @@
             class="col-md-12 col-lg-8 text-md-start order-lg-1 order-md-1"
             style="max-width: 560px;"
           >
-            <h2
-              id="nueva-comunidad"
-              class="fw-bold display-5 mb-3 mt-3"
-            >
+            <h2 id="nueva-comunidad" class="fw-bold display-5 mb-3 mt-3">
               ¿Cómo agrego una comunidad?
             </h2>
             <p class="text-dark">
@@ -110,8 +112,12 @@
                 cambios.
               </li>
               <li>
-                📄 Llena este <a href="https://forms.gle/o4CeeMgSaJbXE7896" target="_blank">formulario de Google Docs</a> con los datos que se te
-                solicitan, una vez hayamos agregado tu comunidad al registro te notificaremos por correo electrónico.
+                📄 Llena este
+                <a href="https://forms.gle/o4CeeMgSaJbXE7896" target="_blank"
+                  >formulario de Google Docs</a
+                >
+                con los datos que se te solicitan, una vez hayamos agregado tu
+                comunidad al registro te notificaremos por correo electrónico.
               </li>
             </ul>
           </div>
@@ -126,7 +132,13 @@ import { metaInfo } from "../data";
 
 export default {
   metaInfo() {
-    return metaInfo(this.$seo, '¿Qué es?');
+    return metaInfo(this.$seo, "¿Qué es?");
+  },
+  data() {
+    return {
+      shareText:
+        "🔎 ¿Ya conoces el Atlas tech?%0aDescubre las comunidades tecnológicas en Latinoamérica 🌎%0a¡Conoce más sobre el proyecto en 👉 https://comunidades.lat!",
+    };
   },
 };
 </script>
