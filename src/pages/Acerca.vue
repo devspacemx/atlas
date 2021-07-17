@@ -137,7 +137,7 @@ export default {
   data() {
     return {
       shareText:
-        "🔎 ¿Ya conoces el Atlas tech?%0aDescubre las comunidades tecnológicas en Latinoamérica 🌎%0a¡Conoce más sobre el proyecto en 👉 https://comunidades.lat!",
+        "🔎 ¿Ya conoces Atlas?%0aDescubre esta plataforma dónde se reunen las comunidades tecnológicas en Latinoamérica 🌎 %0aConoce más sobre el proyecto en 👉 https://comunidades.lat/",
     };
   },
 };
