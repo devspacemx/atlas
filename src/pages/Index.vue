@@ -98,6 +98,7 @@ export default {
       `&text_alignment=bottom%2Cleft&logo_padding=70&font_family=Avenir%20Next%20Demi%2CBold&text_color=1d1d1d`;
     return this.$seo({
       title: "Atlas de comunidades",
+      titleTemplate: "%s",
       baseUrl: `${siteURL}`,
       keywords: `atlas,atlas comunidades,atlas tech,comunidades tech,comunidad tech,comunidad`,
       lang: "es",
