@@ -5,7 +5,7 @@
       data-navbar-on-scroll="data-navbar-on-scroll"
       style="background-image: none; background-color: rgb(255, 255, 255); transition: none 0s ease 0s;"
     >
-      <div class="container-fluid">
+      <div class="container">
         <g-link class="navbar-brand" to="/">
           <g-image
             src="~/assets/images/logo.png"
@@ -63,7 +63,7 @@
             >
           </form>
           <div class="d-flex align-items-center ps-lg-3">
-            <Search />
+            <Search style="max-width:20rem" />
           </div>
         </div>
       </div>

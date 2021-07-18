@@ -45,9 +45,7 @@
                 </div>
               </g-link>
             </div>
-             <ais-powered-by
-            class="mx-2 my-2"
-          />
+            <ais-powered-by class="mx-2 my-2" />
           </div>
         </div>
       </div>
@@ -76,7 +74,9 @@ export default {
 }
 
 .results {
+  max-width: 20rem;
   width: 100%;
+  display: block;
   background-color: #fefefe;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
