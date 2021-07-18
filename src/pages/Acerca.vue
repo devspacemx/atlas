@@ -5,7 +5,7 @@
         <!-- Agregar comunidad -->
         <div class="row flex-center">
           <div
-            class="col-md-12 col-lg-4 mb-4 mt-5 d-flex align-items-center justify-content-center order-lg-0 order-md-0"
+            class="col-md-12 col-lg-4 mb-4 mt-4 d-flex align-items-center justify-content-center order-lg-0 order-md-0"
           >
             <g-image
               src="~/assets/images/collab.png"
@@ -17,7 +17,7 @@
             class="col-md-12 col-lg-8 text-md-start order-lg-1 order-md-1"
             style="max-width: 460px;"
           >
-            <h1 id="nueva-comunidad" class="fw-bold display-4 mb-3 mt-3">
+            <h1 id="nueva-comunidad" class="fw-bold display-4 mb-4 mt-4">
               ¿Cómo agrego una comunidad?
             </h1>
             <p class="text-dark">
@@ -63,7 +63,7 @@
             class="col-md-12 col-lg-8 text-md-start order-lg-0 order-md-1"
             style="max-width: 460px;"
           >
-            <h1 class="fw-bold display-4 mb-2 mt-1">
+            <h1 class="fw-bold display-4 mb-4 mt-2">
               El Atlas<br />de comunidades 🌎
             </h1>
             <p class="text-dark">
@@ -76,7 +76,7 @@
               sean de tecnologías en general o muy específicas, todas nacen
               gracias a las necesidades y oportunidades que hay en cada país.
             </p>
-            <p class="mt-3 text-dark">
+            <p class="mt-2 text-dark">
               Las de software, las de hardware, las de emprendimiento y
               <b>más...</b>
               Todas participando activamente en generar conocimiento y
@@ -99,7 +99,7 @@
             class="col-md-12 col-lg-8 text-md-start order-lg-0 order-md-1"
             style="max-width: 460px;"
           >
-            <h2 class="fw-bold display-5 mb-3 mt-3">¿Por qué?</h2>
+            <h2 class="fw-bold display-5 mb-4 mt-4">¿Por qué?</h2>
             <p class="text-dark">
               Para que las personas puedan encontrar comunidades de su interés y
               hacer nuevas amistades.
