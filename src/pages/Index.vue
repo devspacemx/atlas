@@ -87,7 +87,7 @@ export default {
     CommunityCards,
   },
   metaInfo() {
-    return metaInfo(this.$seo, '¡Hola!');
+    return metaInfo(this.$seo, 'Atlas', false);
   },
   data() {
     return {

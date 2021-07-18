@@ -40,6 +40,7 @@ module.exports = {
     "Conoce las comunidades tecnológicas que te rodean y súmate a ellas, ven y conoce la plataforma 👋",
   siteUrl: "https://comunidades.lat",
   // pathPrefix: "/atlas",
+  titleTemplate: "%s",
   chainWebpack(config) {
     config.mode("development");
   },

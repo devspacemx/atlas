@@ -170,7 +170,7 @@ export default {
       `&logo_alignment=top%2Cleft` +
       `&text_alignment=bottom%2Cleft&logo_padding=70&font_family=Avenir%20Next%20Demi%2CBold&text_color=1d1d1d`;
     return this.$seo({
-      title: `${this.$page.community.title}`,
+      title: `${this.$page.community.title} - Atlas de Comunidades`,
       baseUrl: `${siteURL}`,
       description: this.$page.community.description,
       keywords: `atlas,atlas comunidades,atlas tech,comunidades tech,comunidad tech,comunidad,${

@@ -1,4 +1,4 @@
-export const metaInfo = (seo, title) => {
+export const metaInfo = (seo, title, showTitleSuffix = true) => {
   const baseURL = "https://comunidades.lat";
   const logoURL = encodeURI(`${baseURL}/logo.png`);
   const imageURL = encodeURI(`${baseURL}/screen.png`);
@@ -10,7 +10,7 @@ export const metaInfo = (seo, title) => {
     `&logo_alignment=top%2Cleft` +
     `&text_alignment=bottom%2Cleft&logo_padding=70&font_family=Avenir%20Next%20Demi%2CBold&text_color=1d1d1d`;
   return seo({
-    title: title,
+    title: showTitleSuffix ? `${title} - Atlas de Comunidades` : title,
     baseUrl: `${baseURL}`,
     keywords: `atlas,atlas comunidades,atlas tech,comunidades tech,comunidad tech,comunidad`,
     lang: "es",
