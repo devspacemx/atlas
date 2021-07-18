@@ -98,7 +98,7 @@ export default {
     CommunityCards,
   },
   metaInfo() {
-    return metaInfo(this.$seo, 'Comunidades');
+    return metaInfo(this.$seo, 'Comunidades', true);
   },
   
 };

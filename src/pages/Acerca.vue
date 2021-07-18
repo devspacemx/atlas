@@ -132,7 +132,7 @@ import { metaInfo } from "../data";
 
 export default {
   metaInfo() {
-    return metaInfo(this.$seo, "¿Qué es?");
+    return metaInfo(this.$seo, "¿Qué es?", true);
   },
   data() {
     return {

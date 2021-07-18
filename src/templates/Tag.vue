@@ -106,7 +106,7 @@ export default {
     },
   },
   metaInfo() {
-    return metaInfo(this.$seo, this.$page.tag.title);
+    return metaInfo(this.$seo, this.$page.tag.title, true);
   },
 };
 </script>

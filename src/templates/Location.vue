@@ -109,7 +109,7 @@ export default {
     },
   },
   metaInfo() {
-    return metaInfo(this.$seo, this.$page.location.title);
+    return metaInfo(this.$seo, this.$page.location.title, true);
   },
 };
 </script>
