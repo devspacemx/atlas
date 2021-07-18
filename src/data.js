@@ -1,4 +1,4 @@
-export const metaInfo = (seo, title, showTitleSuffix = true) => {
+export const metaInfo = (seo, title, showTitleSuffix) => {
   const baseURL = "https://comunidades.lat";
   const logoURL = encodeURI(`${baseURL}/logo.png`);
   const imageURL = encodeURI(`${baseURL}/screen.png`);
