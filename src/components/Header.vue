@@ -26,7 +26,7 @@
         </button>
         <div class="collapse navbar-collapse text-truncate" id="navbarSupportedContent">
           <ul
-            class="navbar-nav me-auto ms-lg-4 ms-xl-7 border-bottom border-lg-bottom-0 pt-2 pt-lg-0"
+            class="navbar-nav me-auto ms-lg-4 ms-xl-7 border-bottom border-lg-bottom-0 pt-2 px-2 pt-lg-0"
           >
             <li class="nav-item">
               <g-link class="nav-link fw-medium" to="/" exact>Inicio</g-link>
@@ -54,14 +54,14 @@
               >
             </li>
           </ul>
-          <form class="d-flex py-3 py-lg-0">
+          <div class="d-flex py-4 py-lg-0">
             <g-link
               class="btn btn-info me-1 text-truncate"
-              to="/acerca#nueva-comunidad/"
+              to="/acerca"
               role="button"
               >Añade una comunidad</g-link
             >
-          </form>
+          </div>
           <div class="d-flex align-items-center ps-lg-3">
             <Search style="max-width:20rem" />
           </div>

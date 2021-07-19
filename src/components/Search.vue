@@ -30,6 +30,14 @@
             :key="index.indexId"
             class="position-absolute top-100 text-dark results shadow"
           >
+            <div class="result py-3" v-if="index.hits.length < 1">
+                <div class="px-2 px-lg-3">
+                  <p class="fw-normal mb-0 text-truncate">
+                    <font-awesome :icon="['fas', 'search']" />
+                    No se encontró ningún resultado
+                  </p>
+                </div>
+            </div>
             <div class="result" v-for="result in index.hits" :key="result.id">
               <g-link :to="result.path" class="d-flex align-items-center">
                 <div class="my-3 px-2 px-lg-3">

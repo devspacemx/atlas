@@ -2,7 +2,7 @@
   <div class="row">
     <div
       v-for="community in communities"
-      class="col-lg-4 col-md-6 col-xs-12 mb-4"
+      class="col-lg-4 col-md-6 col-xs-12 mb-4 d-flex"
       :key="community.id"
     >
       <CommunityCard :community="community.node" />

@@ -1,5 +1,5 @@
 <template>
-  <div class="link-block">
+  <div class="link-block flex-fill">
     <g-link
       class="overlay text-decoration-none text-reset card h-100 shadow px-2 px-lg-3 card-span"
       :to="community.path"
@@ -24,7 +24,6 @@
             </p>
           </div>
         </div>
-        <div class="fw-bold text-uppercase">Descripción</div>
         <p class="text-wrap text-body text-truncate text-black mb-1">
           {{
             community.description.length >= 150

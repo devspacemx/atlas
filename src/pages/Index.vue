@@ -25,7 +25,7 @@
             <span>
               <g-link
                 class="btn btn-info me-1"
-                to="/acerca#nueva-comunidad"
+                to="/acerca"
                 role="button"
                 >Añade una comunidad</g-link
               >
