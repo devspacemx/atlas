@@ -5,6 +5,7 @@ import {
   faFacebook,
   faGithub,
   faInstagram,
+  faSlack,
   faTelegram,
   faTwitter,
   faYoutube,
@@ -33,7 +34,8 @@ library.add(
   faDiscord,
   faInstagram,
   faSearch,
-  faYoutube
+  faYoutube,
+  faSlack
 );
 
 // Import FontAwesome

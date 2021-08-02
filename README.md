@@ -134,10 +134,12 @@ image: /uploads/logo.png
 # Tags opcionales, te recomendamos colocar por lo menos uno
 twitter: username
 facebook: username
+youtube: username (o lo que vaya después de youtube.com/)
 instagram: username
 github: username
-youtube: username o lo que vaya después de youtube.com/<!here>
 web: https://web.com
+slack: url completa de slack
+discord: url de invitación completa de discord
 ---
 
 Contenido extra, puede ser formato Markdown y HTML

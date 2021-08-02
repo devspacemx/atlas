@@ -12,6 +12,8 @@ youtube: username (o lo que vaya después de youtube.com/)
 instagram: username
 github: username
 web: https://web.com
+slack: url completa de slack
+discord: url de invitación completa de discord
 ---
 
 > Aquí puedes colocar contenido extra, se acepta formato markdown y HTML, ¡Ponte creativo!

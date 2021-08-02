@@ -98,6 +98,8 @@ query Community ($path: String!) {
     github
     web
     youtube
+    discord
+    slack
   }
 }
 </page-query>
@@ -116,6 +118,8 @@ export default {
         "web",
         "instagram",
         "youtube",
+        "slack",
+        "discord",
       ],
       icons: {
         twitter: ["fab", "twitter"],
@@ -125,6 +129,8 @@ export default {
         web: ["fas", "link"],
         instagram: ["fab", "instagram"],
         youtube: ["fab", "youtube"],
+        slack: ["fab", "slack"],
+        discord: ["fab", "discord"],
       },
       urls: {
         twitter: "https://twitter.com/",
@@ -134,6 +140,8 @@ export default {
         web: "",
         instagram: "https://instagram.com/",
         youtube: "https://youtube.com/",
+        slack: "",
+        discord: "",
       },
     };
   },
