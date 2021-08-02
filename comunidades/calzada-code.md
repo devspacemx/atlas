@@ -1,6 +1,6 @@
 ---
 title: Calzada Code
-date: 2021-06-21
+date: 2021-08-02
 description: Somos una comunidad de entusiastas del desarrollo de software.
 tags: ['Programación', 'Meetup']
 location: México
