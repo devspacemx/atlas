@@ -3,14 +3,13 @@ title: Linuxeros Zapopan
 date: 2021-07-07
 description: Welcome! We are a Linux users community. We share knowledge about Free Software and Open Source.
 tags: ['Programación', 'Linux', 'Webinars', 'TI']
-location: México
+location: Zapopan, Jalisco, México
 twitter: lnxzpn
-facebook: lnxzpn
-youtube: lnxzpn
+youtube: LinuxerosZapopan
 telegram: lnxzpn
 image: /uploads/linuxeros.png
 ---
 
 Welcome!
 
-We are a Linux users community. We share knowledge about Free Software and Open Source.
+We are a Linux users community. We share knowledge about Free Software and Open Source. 
