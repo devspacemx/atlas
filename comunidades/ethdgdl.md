@@ -1,8 +1,8 @@
 ---
-title: ETH GDL
-date: 2021-08-11 <-- SIGUE ESTE FORMATO DE FECHA (YYYY-MM-DD)
+title: Ethereum Guadalajara
+date: 2021-08-11
 description: Comunidad Tapatía de Ethereum
-tags: ["Coloca", "Tags", "Para", "Identificar", "Tu", "Comunidad"]
+tags: ["Open Source", "Meetup", "Comunidad"]
 location: Guadalajara, Jalisco, México
 image: /uploads/ethgdl.png
 # Tags opcionales, te recomendamos colocar por lo menos uno
