@@ -1,8 +1,8 @@
 ---
 title: LIDSOL
-date: 2021-08-11 
+date: 2021-08-12 
 description: Laboratorio de Investigación y Desarrollo de Software Libre de la Facultad de Ingeniería, UNAM
-tags: ["Software Libre", "Comunidad", "Meetup", "Talleres", "Webinars"]
+tags: ["Software Libre", "Comunidad", "Meetup", "Talleres", "Webinars", "UNAM", "Laboratorio"]
 location: México
 image: /uploads/lidsol.jpeg
 # Tags opcionales, te recomendamos colocar por lo menos uno
@@ -11,6 +11,7 @@ facebook: lidsol.unam
 gitlab: lidsol
 github: lidsol
 web: https://lidsol.org
+telegram: LIDSoL
 ---
 
 El LIDSOL es un laboratorio de la Facultad de Ingeniería de la UNAM, establecido en 2001, formado por voluntarios, alumnos, ex-alumnos y académicos interesados en el desarrollo de tecnologías libres y las discusiones sobre su impacto en la sociedad.
