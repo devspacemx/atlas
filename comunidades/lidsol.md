@@ -8,7 +8,6 @@ image: /uploads/lidsol.jpeg
 # Tags opcionales, te recomendamos colocar por lo menos uno
 twitter: lidsol
 facebook: lidsol.unam
-youtube: username (o lo que vaya después de youtube.com/)
 gitlab: lidsol
 github: lidsol
 web: https://lidsol.org
