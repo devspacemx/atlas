@@ -9,7 +9,7 @@ image: /uploads/devlandmx.png
 github: devlandmx
 telegram: devlandmx
 slack: https://join.slack.com/t/devland-mx/shared_invite/zt-vpglarwg-scpTrGH1gh~QIx4XOsJ61g
-web: https://devlandmx.github.io/website/
+web: https://devland.edfloreshz.dev/
 ---
 
 Una comunidad para desarrolladores apasionados por el software, la tecnología y la innovación.
