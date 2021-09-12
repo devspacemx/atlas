@@ -7,7 +7,6 @@ location: Internacional
 image: /uploads/enrails.png
 twitter: en_rails
 youtube: enrails
-github: username
 web: https://newsletter.enrails.com
 discord: https://discord.enrails.com
 ---
