@@ -2,7 +2,7 @@
 title: Codeando México
 date: 2021-08-02
 description: Comunidad de Hacking Cívico
-tags: ["civic-tech", "datos", "open-source"]
+tags: ['civic-tech', 'datos', 'Open Source']
 location: México
 image: /uploads/codeandomexico.png
 # Tags opcionales, te recomendamos colocar por lo menos uno
