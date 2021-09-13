@@ -2,7 +2,7 @@
 title: DevLand
 date: 2021-09-10
 description: Comunidad para desarrolladores apasionados por el software, la tecnología y la innovación.
-tags: ["Linux", "Open Source", "Software Libre", "Programacion", "Software"]
+tags: ['Linux', 'Open Source', 'Software Libre', 'Programación', 'Software']
 location: México
 image: /uploads/devlandmx.png
 # Tags opcionales, te recomendamos colocar por lo menos uno
