@@ -100,6 +100,7 @@ query Community ($path: String!) {
     youtube
     discord
     slack
+    meetup
   }
 }
 </page-query>
@@ -120,6 +121,7 @@ export default {
         "youtube",
         "slack",
         "discord",
+        "meetup",
       ],
       icons: {
         twitter: ["fab", "twitter"],
@@ -131,6 +133,7 @@ export default {
         youtube: ["fab", "youtube"],
         slack: ["fab", "slack"],
         discord: ["fab", "discord"],
+        meetup: ["fab", "meetup"]
       },
       urls: {
         twitter: "https://twitter.com/",
@@ -142,6 +145,7 @@ export default {
         youtube: "https://youtube.com/",
         slack: "",
         discord: "",
+        meetup: ""
       },
     };
   },
