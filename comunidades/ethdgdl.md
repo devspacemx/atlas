@@ -3,7 +3,7 @@ title: Ethereum Guadalajara
 date: 2021-08-11
 description: Comunidad Tapatía de Ethereum
 tags: ["Open Source", "Meetup", "Comunidad"]
-location: Guadalajara, Jalisco, México
+location: México
 image: /uploads/ethgdl.png
 # Tags opcionales, te recomendamos colocar por lo menos uno
 twitter: ethgdl
