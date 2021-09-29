@@ -13,6 +13,7 @@ import {
   faYoutube,
 } from "@fortawesome/free-brands-svg-icons";
 import {
+  faEdit,
   faLink,
   faMapMarkerAlt,
   faSearch,
@@ -39,7 +40,8 @@ library.add(
   faYoutube,
   faSlack,
   faMeetup,
-  faLinkedin
+  faLinkedin,
+  faEdit
 );
 
 // Import FontAwesome

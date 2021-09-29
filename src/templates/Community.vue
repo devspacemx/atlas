@@ -3,6 +3,19 @@
     <div class="container mt-8">
       <div class="row">
         <div class="col-lg-8">
+          <div class="d-flex align-items-end flex-column">
+            <a
+              target="_blank"
+              rel="noreferrer"
+              :href="
+                `https://github.com/devspacemx/atlas/edit/main/comunidades/${
+                  $page.community.fileInfo.name
+                }.md`
+              "
+            >
+              <font-awesome size="lg" :icon="['fas', 'edit']" />
+            </a>
+          </div>
           <p>
             <g-image
               class="mb-1 image-fluid mx-auto d-block"
@@ -13,8 +26,8 @@
           <h1 v-html="$page.community.title" class="mb-2" />
           <div v-html="$page.community.content" class="text-black" />
         </div>
-        <div class="col-lg-4 sidebar">
-          <div class="sidebar-box">
+        <div class="col-lg-4 sidebar shadow">
+          <div class="sidebar-box mt-3">
             <h3>Tags</h3>
             <div class="tagcloud">
               <g-link
@@ -28,7 +41,7 @@
           </div>
           <div v-if="hasShortDescription" class="sidebar-box">
             <h3>Sobre esta comunidad</h3>
-            <p>
+            <p class="text-black">
               {{ $page.community.description }}
             </p>
           </div>
@@ -91,6 +104,9 @@ query Community ($path: String!) {
       title
       path
     }
+    fileInfo {
+      name
+    }
     twitter
     facebook
     instagram
@@ -123,7 +139,7 @@ export default {
         "slack",
         "discord",
         "meetup",
-        "linkedin"
+        "linkedin",
       ],
       icons: {
         twitter: ["fab", "twitter"],
@@ -136,7 +152,7 @@ export default {
         slack: ["fab", "slack"],
         discord: ["fab", "discord"],
         meetup: ["fab", "meetup"],
-        linkedin: ["fab", "linkedin"]
+        linkedin: ["fab", "linkedin"],
       },
       urls: {
         twitter: "https://twitter.com/",
@@ -149,7 +165,7 @@ export default {
         slack: "",
         discord: "",
         meetup: "",
-        linkedin: ""
+        linkedin: "",
       },
     };
   },
@@ -210,3 +226,13 @@ export default {
   },
 };
 </script>
+
+<style lang="scss" scoped>
+.sidebar {
+  background-color: #fcfcfc;
+  border-radius: 4px;
+}
+.sidebar-box {
+  background-color: #fcfcfc;
+}
+</style>
