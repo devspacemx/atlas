@@ -229,10 +229,10 @@ export default {
 
 <style lang="scss" scoped>
 .sidebar {
-  background-color: #fcfcfc;
-  border-radius: 4px;
+  background-color: #fff;
+  border-radius: 6px;
 }
 .sidebar-box {
-  background-color: #fcfcfc;
+  background-color: #fff;
 }
 </style>

@@ -1,7 +1,7 @@
 <template>
   <header>
     <nav
-      class="navbar navbar-expand-lg navbar-light fixed-top py-3 shadow"
+      class="navbar navbar-expand-lg navbar-light fixed-top py-3"
       data-navbar-on-scroll="data-navbar-on-scroll"
       style="background-image: none; background-color: rgb(255, 255, 255); transition: none 0s ease 0s;"
     >
