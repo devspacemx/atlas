@@ -9,6 +9,7 @@ import {
   faMeetup,
   faSlack,
   faTelegram,
+  faTwitch,
   faTwitter,
   faYoutube,
 } from "@fortawesome/free-brands-svg-icons";
@@ -41,7 +42,8 @@ library.add(
   faSlack,
   faMeetup,
   faLinkedin,
-  faEdit
+  faEdit,
+  faTwitch
 );
 
 // Import FontAwesome

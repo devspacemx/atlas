@@ -118,6 +118,7 @@ query Community ($path: String!) {
     slack
     meetup
     linkedin
+    twitch
   }
 }
 </page-query>
@@ -140,6 +141,7 @@ export default {
         "discord",
         "meetup",
         "linkedin",
+        "twitch"
       ],
       icons: {
         twitter: ["fab", "twitter"],
@@ -153,6 +155,7 @@ export default {
         discord: ["fab", "discord"],
         meetup: ["fab", "meetup"],
         linkedin: ["fab", "linkedin"],
+        twitch: ["fab", "twitch"]
       },
       urls: {
         twitter: "https://twitter.com/",
@@ -162,10 +165,11 @@ export default {
         web: "",
         instagram: "https://instagram.com/",
         youtube: "https://youtube.com/",
+        twitch: "https://twitch.tv/",
         slack: "",
         discord: "",
         meetup: "",
-        linkedin: "",
+        linkedin: ""
       },
     };
   },
