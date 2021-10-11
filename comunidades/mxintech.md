@@ -2,7 +2,7 @@
 title: México in Tech
 date: 2021-06-21
 description: Comunidad de profesionales TI en México
-tags: ['Programación', 'Linux', 'Webinars', 'TI', 'DevOps', 'Go', 'rhel', 'fedora', 'Ansible', 'Kubernetes', 'AWS','Cloud', 'bash', 'OpenFaaS', 'Git', 'Docker', 'Containers', 'sysadmin', 'EC2', 'S3', 'IAM', 'Jenkins', 'Automation']
+tags: ['Programación', 'Linux', 'Webinars', 'TI', 'DevOps', 'Go', 'AWS','Cloud', 'Git', 'Docker']
 location: México
 twitter: mxintech
 facebook: mxintech
