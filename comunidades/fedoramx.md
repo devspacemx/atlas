@@ -5,6 +5,7 @@ description: Fedora Mexico es un grupo oficial donde compartimos experiencias, c
 tags: ["Meetup", "Fedora", "Linux", "Students", "FOSS", "Webinars"]
 location: México
 twitter: fedoramexico
+telegram: fedoramexico
 image: /uploads/fedoramx.png
 meetup: https://www.meetup.com/es-ES/Fedora-Mexico/
 web: https://fedoramx.fedorapeople.org/

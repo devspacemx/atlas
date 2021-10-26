@@ -142,6 +142,7 @@ slack: url completa de slack
 discord: url de invitación completa de discord
 meetup: url de meetup completa
 twitch: username
+telegram: username o nombre del grupo
 ---
 
 Contenido extra, puede ser formato Markdown y HTML
