@@ -5,9 +5,9 @@ description: Somos una de las comunidades de desarrolladores más grandes al red
 tags: ["Programación", "Frontend", "Backend", "Mobile", "Cursos", "Comunidad"]
 location: Internacional
 image: /uploads/meta_logo.png
-facebook: https://www.facebook.com/MetaforDevelopers
-youtube: https://www.youtube.com/c/MetaDeveloperCircleCiudaddeMexico
-github: https://github.com/fbdevelopercircles
+facebook: MetaforDevelopers
+youtube: c/MetaDeveloperCircleCiudaddeMexico
+github: fbdevelopercircles
 web: https://developers.facebook.com/developercircles
 ---
 
