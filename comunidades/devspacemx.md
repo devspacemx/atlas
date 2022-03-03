@@ -8,6 +8,7 @@ twitter: devspacemx
 facebook: devspacemexico
 instagram: devspacemx
 github: devspacemx
+discord: https://discord.gg/grqX4bQZeK
 image: /uploads/devspace.png
 web: https://devspace.mx
 ---

@@ -10,7 +10,7 @@
               <li class="list-inline-item mr-3">
                 <a
                   class="text-decoration-none"
-                  href="https://twitter.com/devspacemx"
+                  href="https://twitter.com/comunidadeslat"
                   target="_blank"
                   rel="noreferrer"
                 >
@@ -30,7 +30,7 @@
               <li class="list-inline-item mr-3">
                 <a
                   class="text-decoration-none"
-                  href="https://facebook.com/devspacemexico"
+                  href="https://facebook.com/comunidadeslat"
                   target="_blank"
                   rel="noreferrer"
                 >

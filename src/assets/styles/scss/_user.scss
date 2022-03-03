@@ -3,6 +3,11 @@
 // user.scss
 //
 // Place your own theme CSS or SCSS rules below this line, these rules will override any Bootstrap and theme variables.
+
+body {
+  background-color: #f6f6f6;
+}
+
 .tagcloud {
   a {
     text-transform: uppercase;

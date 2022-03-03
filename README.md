@@ -16,7 +16,7 @@ Aquí puedes conocer todos los detalles detrás del proyecto Atlas y como colabo
 
 [![license](https://img.shields.io/badge/license-MIT-red)](LICENSE.md)
 [![website](https://img.shields.io/badge/website-comunidades.lat-blue)](https://comunidades.lat/)
-[![twitter](https://img.shields.io/twitter/follow/devspacemx?label=Twitter&logo=twitter)](https://twitter.com/devspacemx)
+[![twitter](https://img.shields.io/twitter/follow/comunidadeslat?label=Twitter&logo=twitter)](https://twitter.com/comunidadeslat)
 [![Discord](https://img.shields.io/discord/635852899066314753?label=Discord&logo=discord)](https://discordapp.com/invite/sJ7b9Mr)
 
 </div>
@@ -140,6 +140,9 @@ github: username
 web: https://web.com
 slack: url completa de slack
 discord: url de invitación completa de discord
+meetup: url de meetup completa
+twitch: username
+telegram: username o nombre del grupo
 ---
 
 Contenido extra, puede ser formato Markdown y HTML

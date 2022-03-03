@@ -5,12 +5,16 @@ import {
   faFacebook,
   faGithub,
   faInstagram,
+  faLinkedin,
+  faMeetup,
   faSlack,
   faTelegram,
+  faTwitch,
   faTwitter,
   faYoutube,
 } from "@fortawesome/free-brands-svg-icons";
 import {
+  faEdit,
   faLink,
   faMapMarkerAlt,
   faSearch,
@@ -35,7 +39,11 @@ library.add(
   faInstagram,
   faSearch,
   faYoutube,
-  faSlack
+  faSlack,
+  faMeetup,
+  faLinkedin,
+  faEdit,
+  faTwitch
 );
 
 // Import FontAwesome

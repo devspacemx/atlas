@@ -15,13 +15,14 @@
               El Atlas de comunidades tech <br />
               en Latinoamérica 🌎
             </h1>
-            <p class="mt-3 mb-4">
+            <p class="mt-3 text-dark">
               Atlas es una plataforma que busca unificar un directorio de
               comunidades tecnológicas.<br />
               Reconozcamos la labor que han hecho muchas comunidades en
               Latinoamérica.<br />
               El Atlas lo construimos todos. Hagamos comunidad 👋
             </p>
+            <p class="text-dark">Hay un total de <strong>{{$page.total.edges.length}}</strong> comunidades registradas</p>
             <span>
               <g-link
                 class="btn btn-info me-1"
@@ -44,7 +45,7 @@
       </div>
       <CommunityCards :communities="$page.communities.edges" />
       <a
-        class="btn btn-link ps-1 ps-md-4 ps-lg-1"
+        class="btn"
         :href="'https://twitter.com/intent/tweet?text=' + shareText"
         target="_blank"
         rel="noreferrer"
@@ -73,6 +74,13 @@ query Community {
           path
         }
         image (width: 100, quality: 90)
+      }
+    }
+  },
+  total: allCommunity {
+    edges {
+      node {
+        id
       }
     }
   }

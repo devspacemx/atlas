@@ -4,7 +4,7 @@ date: 2021-07-07
 description: Welcome to Tech Talks! a conversational club to learn and improve the English language for free. We join on a Jitsi Meet call every week to talk and practice with others
 tags: ['English', 'Webinars', 'Telegram', 'Club']
 location: Internacional
-twitter: lnxzpn
+twitter: techntlks
 telegram: techntalks
 image: /uploads/techtalks.png
 ---

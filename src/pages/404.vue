@@ -1,14 +1,15 @@
 <template>
   <Layout>
     <g-image class="img-fluid" src="~/assets/images/404.png" />
+        <p class="text-black fw-bold text-center">¡Ups! Página no encontrada</p>
   </Layout>
 </template>
 
 <style scoped lang="scss">
 img {
-  width: 60%;
+  width: 30%;
   margin: auto;
-  margin-top: 10rem;
+  margin-top: 8rem;
 
   @media (max-width: 500px) {
     width: 70%;

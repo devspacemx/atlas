@@ -1,7 +1,7 @@
 <template>
   <header>
     <nav
-      class="navbar navbar-expand-lg navbar-light fixed-top py-3 shadow-transition"
+      class="navbar navbar-expand-lg navbar-light fixed-top py-3"
       data-navbar-on-scroll="data-navbar-on-scroll"
       style="background-image: none; background-color: rgb(255, 255, 255); transition: none 0s ease 0s;"
     >
@@ -24,7 +24,10 @@
         >
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse text-truncate" id="navbarSupportedContent">
+        <div
+          class="collapse navbar-collapse text-truncate"
+          id="navbarSupportedContent"
+        >
           <ul
             class="navbar-nav me-auto ms-lg-4 ms-xl-7 border-bottom border-lg-bottom-0 pt-2 px-2 pt-lg-0"
           >
@@ -57,7 +60,7 @@
           <div class="d-flex py-4 py-lg-0">
             <g-link
               class="btn btn-info me-1 text-truncate"
-              to="/acerca"
+              to="/nueva-comunidad"
               role="button"
               >Añade una comunidad</g-link
             >

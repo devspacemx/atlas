@@ -31,7 +31,6 @@
               : community.description
           }}
         </p>
-        <div class="fw-bold text-uppercase">Tags</div>
         <div class="d-flex align-items-center mt-1 fs-1">
           <div class="tagcloud">
             <!-- only show 3 tags -->

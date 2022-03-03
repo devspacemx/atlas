@@ -5,12 +5,11 @@ description: Welcome! We are a Linux users community. We share knowledge about F
 tags: ['Programación', 'Linux', 'Webinars', 'TI']
 location: México
 twitter: lnxzpn
-facebook: lnxzpn
-youtube: lnxzpn
+youtube: LinuxerosZapopan
 telegram: lnxzpn
 image: /uploads/linuxeros.png
 ---
 
 Welcome!
 
-We are a Linux users community. We share knowledge about Free Software and Open Source.
+We are a Linux users community. We share knowledge about Free Software and Open Source. 
